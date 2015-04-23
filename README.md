@@ -1,5 +1,4 @@
-Appunti DSP
-===========
+# Digital Signal Processing Notes
 
 Appunti personali per il corso di Elaborazione numerica dei Segnali Digitali
 
