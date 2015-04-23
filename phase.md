@@ -27,7 +27,8 @@ In un sistema a fase lineare non ci sono distorsioni di fase dovute al ritardo
 relativo tra le varie frequenze (dato che son ritardate tutte allo stesso modo).
 
 Per sistemi a tempo discreto, la fase lineare perfetta si ottiene tramite
-l'utilizzo di filtri a risposta impulsiva finita (`FIR`).
+l'utilizzo di filtri a risposta impulsiva finita (`FIR`) che hanno una risposta
+impulsiva simmetrica.
 
 ### Fase minima
 
@@ -62,3 +63,30 @@ fase nulla.
 
 Per applicare dunque un filtro con risposta di ampiezza A ci basta applicare il
 metodo citato sopra con un filtro sqrt(A).
+
+## FIR a fase lineare
+
+Un filtro FIR è a fase lineare sse la sua risposta impulsiva è simmetrica,
+ovvero per un filtro a durata N deve valere: 
+
+    h(n) = h(N-n) || h(n) = - h(N-n)
+
+Esistono quattro tipi di FIR a fase lineare:
+
+1. simmetrici a lunghezza pari
+2. simmetrici a lunghezza dispari
+3. antisimmetrici a lunghezza pari 
+4. antisimmetrici a lunghezza dispari
+
+Per gli antisimmetrici a lunghezza dispari deve valere:
+    
+    h(N/2) = 0
+
+I quattro tipi di fitri differiscono per la disposizione degli zeri in +1 e -1:
+
+1. numero pari (o nullo) di zeri in +1 e -1 
+2. numero pari (o nullo) di zeri in +1 e un numero dispari di zeri in
+   -1
+3. numero dispari di zeri in +1 ed un numero dispari di zeri in -1
+4. numero dispari di zeri in +1 e un numero pari (o nullo) di zeri in
+   -1
