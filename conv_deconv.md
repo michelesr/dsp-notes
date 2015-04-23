@@ -21,7 +21,9 @@ Sia X(n) il segnale d'ingresso ed H(n) la risposta impulsiva del sistema, entram
 nel dominio temporale, abbiamo che il segnale di uscita è dato dalla seguente
 relazione:
 
-    y(n) = conv(x(n), h(n)) = sum for k -> [-inf,+inf] : x(k)h(n-k)
+<!-- y(n) = conv(x(n), h(n)) = sum for k -> [-inf,+inf] : x(k)h(n-k) --->
+    
+![Convolution](http://latex.codecogs.com/gif.latex?y%28n%29%20%3D%20x%28n%29%20%5Cotimes%20h%28n%29%20%3D%20%5Csum_%7Bk%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20x%28k%29h%28n-k%29)
 
 Il processo di convoluzione gode delle seguenti proprietà:
 
@@ -33,7 +35,9 @@ Il processo di convoluzione gode delle seguenti proprietà:
 
 Vale la seguente relazione:
 
-    y(n) = conv(x(n),h(n)) = IDTFT(DTFT(x(n))DTFT(h(n)))
+<!--- y(n) = conv(x(n),h(n)) = IDTFT(DTFT(x(n))DTFT(h(n))) --->
+    
+![Convolution and DTFT](http://latex.codecogs.com/gif.latex?y%28n%29%20%3D%20x%28n%29%20%5Cotimes%20h%28n%29%20%3D%20IDTFT%20%28X%28%5Ciota%20%5Comega%29H%28%5Ciota%20%5Comega%29%29)
 
 DTFT(h(n)) è la risposta in frequenza del sistema, mentre DTFT(x(n)) è lo
 spettro del segnale.
@@ -71,7 +75,9 @@ Quando si conosce la risposta impulsiva causuale h(n) di un sistema e un segnale
 di uscita y(n) prodotto attraverso il sistema, è possibile risalire al segnale di
 ingresso x(n) tramite la seguente relazione:
 
-    x(n) = ( y(n) - ( sum for k -> [1,n] : h(k)x(n-k) ) ) / h(0)
+<!-- x(n) = ( y(n) - ( sum for k -> [1,n] : h(k)x(n-k) ) ) / h(0) -->
+    
+![Deconvolution](http://latex.codecogs.com/gif.latex?x%28n%29%20%3D%20%5Cfrac%7By%28n%29%20-%20%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%20h%28k%29x%28n-k%29%7D%5E%7Bh%280%29%7D)
 
 Il processo viene chiamato deconvoluzione.
 
