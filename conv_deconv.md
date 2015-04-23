@@ -29,6 +29,8 @@ Il processo di convoluzione gode delle seguenti proprietà:
  - associativa
  - commutativa
 
+![Convolution](https://upload.wikimedia.org/wikipedia/commons/b/b9/Convolution_of_spiky_function_with_box2.gif)
+
 Vale la seguente relazione:
 
     y(n) = conv(x(n),h(n)) = IDTFT(DTFT(x(n))DTFT(h(n)))
@@ -93,6 +95,8 @@ sequenza di uscita successiva.
  
     Yn     - - - + + +
     Yn+1         + + + - - -
+
+[!Overlap-Add](https://upload.wikimedia.org/wikipedia/commons/7/77/Depiction_of_overlap-add_algorithm.png)
  
 ### Overlap-Save
 
@@ -109,6 +113,8 @@ precedente.
 
     Yn     / / / - - -
     Yn+1         / / / - - -
+
+![Overlap-Save](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Overlap-save_algorithm.png/800px-Overlap-save_algorithm.png)
 
 ### Considerazioni sulla FFT e IFFT
 
