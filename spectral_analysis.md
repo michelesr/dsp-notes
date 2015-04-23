@@ -65,7 +65,7 @@ corso vanno molto di moda le seguenti:
 
 Utilizzando queste finestre gli spettri hanno dei lobi secondari molto più
 attenuati rispetto agli spettri ottenuto in seguito ad applicazione della
-finestra angolare.
+finestra rettangolare.
 
 L'attenuazione dei lobi secondari si ha a spese dell'allargamento del lobo
 principale e quindi a spese di una perdita di risoluzione, che viene compensata
