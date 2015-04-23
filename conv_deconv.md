@@ -39,7 +39,7 @@ Vale la seguente relazione:
 
 <!--- y(n) = conv(x(n),h(n)) = IDTFT(DTFT(x(n))DTFT(h(n))) --->
     
-![Convolution and DTFT](http://latex.codecogs.com/gif.latex?y%28n%29%20%3D%20x%28n%29%20%5Cotimes%20h%28n%29%20%3D%20IDTFT%20%28X%28%5Ciota%20%5Comega%29H%28%5Ciota%20%5Comega%29%29)
+![Convolution and DTFT](http://latex.codecogs.com/gif.latex?x%28n%29%20%5Cotimes%20h%28n%29%20%3D%20IDTFT%28X%28e%5E%7Bi%5Comega%7D%29H%28e%5E%7Bi%5Comega%7D%29%29)
 
 Ovvero quello che nel dominio del tempo è una convoluzione si trasforma in un prodotto nel dominio delle frequenze.
 
