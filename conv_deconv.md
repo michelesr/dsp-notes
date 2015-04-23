@@ -56,6 +56,21 @@ spettro del segnale.
 Com'è possibile notare la lunghezza della sequenza di uscita è data dalla somma
 delle lunghezze delle sequenze di input meno 1. `(3+4-1 = 6)`
 
+### Metodo tabellare
+
+    x = {  1,  2,  5, -4 }
+    y = {  1, -1,  2, -2 }
+    
+       1 |   2 |   5 |  -4 |
+       1 |  -1 |   2 |  -2 |
+    ------------------------
+       1 |   2 |   5 |  -4 |
+         |  -1 |  -2 |  -5 |   4 |
+               |   2 |   4 |  10 |  -8 |
+                     |  -2 |  -4 | -10 |   8 |
+    ------------------------------------------
+       1 |   1 |   5 |  -7 |  10 | -18 |   8 |
+
 ## Convoluzione circolare
 
 La *convoluzione circolare* è un tipo di convoluzione che lavora con sequenze
@@ -74,6 +89,21 @@ delle sequenze periodiche ottenute aggiungendo zeri.
     ans =
 
     3    6   59   59   56    3
+
+### Metodo tabellare
+
+    x = {  1,  2,  5, -4 }
+    y = {  1, -1,  2, -2 }
+    
+       1 |   2 |   5 |  -4 |
+       1 |  -1 |   2 |  -2 |
+    ------------------------
+       1 |   2 |   5 |  -4 |
+       4 |  -1 |  -2 |  -5 |
+      10 |  -8 |   2 |   4 |
+      -4 | -10 |   8 |  -2 |
+    ------------------------
+      11 | -17 |  13 |  -7 |
 
 ## Deconvoluzione
 
