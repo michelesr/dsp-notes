@@ -8,4 +8,4 @@ Quindi, se anche voi dovete preparare questo esame (o magari un'esame simile) vi
 
 Se volete contribuire, fatemi pure una pull request. L'obiettivo è avere un unica dispensa in modo da non dover cercare cose quà e là sui diversi repository git.
 
-Se notate qualche incongruenza, segnalatemela al mio indirizzo email (che trovate sul mio profilo github).
+Se notate qualche incongruenza, aprite un issue.
