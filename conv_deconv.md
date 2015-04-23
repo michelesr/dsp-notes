@@ -1,4 +1,4 @@
-# Convoluzione
+# Convoluzione e deconvoluzione
 
 ## Risposta impulsiva
 
