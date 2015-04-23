@@ -1,5 +1,6 @@
-Risposta impulsiva
-==================
+# Convoluzione e Deconvoluzione
+
+## Risposta impulsiva
 
 Per risposta impulsiva si intende la risposta del sistema a un impulso unitario.
 
@@ -11,8 +12,7 @@ Per il sistema s(n) vale:
 
 h(n) sarà quindi la risposta impulsiva del sistema s(n).
 
-Convoluzione
-============
+## Convoluzione
 
 Il processo di convoluzione viene utilizzato nel calcolo dell'uscita di un
 sistema di filtri digitali (FIR,IIR).
@@ -44,8 +44,7 @@ spettro del segnale.
 Com'è possibile notare la lunghezza della sequenza di uscita è data dalla somma
 delle lunghezze delle sequenze di input meno 1. (3+4-1 = 6) 
 
-Convoluzione circolare
-======================
+## Convoluzione circolare
 
 La convoluzione circolare è un tipo di convoluzione che lavora con sequenze
 periodiche.
