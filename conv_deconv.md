@@ -92,12 +92,11 @@ convoluzione tra Xm(n) e h(n) tramite fft, prodotto e ifft, e infine si sommano
 gli M-1 campioni finali della Ym(n) ottenuta con i primi (M-1) campioni della
 sequenza di uscita successiva.
 
+![Overlap-Add](https://upload.wikimedia.org/wikipedia/commons/7/77/Depiction_of_overlap-add_algorithm.png)
  
     Yn     - - - + + +
     Yn+1         + + + - - -
 
-[!Overlap-Add](https://upload.wikimedia.org/wikipedia/commons/7/77/Depiction_of_overlap-add_algorithm.png)
- 
 ### Overlap-Save
 
 Nel metodo overlap save si spezza X(n) in sequenze adiacenti Xm(n) di durata L,
@@ -111,10 +110,12 @@ campioni della sequenza di output sono affetti da aliasing temporale, di
 conseguenza li scartiamo a favore degli ultimi (M-1) campioni della sequenza
 precedente.
 
+![Overlap-Save](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Overlap-save_algorithm.png/800px-Overlap-save_algorithm.png)
+
     Yn     / / / - - -
     Yn+1         / / / - - -
 
-![Overlap-Save](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Overlap-save_algorithm.png/800px-Overlap-save_algorithm.png)
+
 
 ### Considerazioni sulla FFT e IFFT
 
