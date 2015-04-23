@@ -37,3 +37,28 @@ sistema e il suo inverso sono `casuali` e `stabili`.
 Per esempio, un sistema con funzione di trasferimento `H(z)` soddisfa causalità
 e stabilità sse tutti i `poli` stanno all'interno del circolo di raggio
 unitario.
+
+## Il filtro ideale
+
+Il filtro ideale è a fase lineare nella banda passante e a fase zero nella banda
+interdetta, ha risposta di frequenza 1 nella banda passante e 0 nella banda
+interdetta, ma non è ne stabile ne assolutamente sommabile, di conseguenza per
+la realizzazione di filtri stabili si introduce una `banda di transizione` tra
+la banda passante e quella interdetta in modo da consentire alla risposta in
+frequenza di decadere graduatamente dal valore massimo a 0. 
+
+## Il filtro a fase zero
+
+Se non si opera in real time, le sequenze sono reali e finite, allora possiamo
+realizzare un filtro a fase zero, ovvero un filtro con risposta in frequenza
+rale e positiva. 
+
+Tale filtro si ottiene elaborando x(n) con un sistema a coeficcienti reali H(z).
+L'uscita di questo filtro viene invertita (time-reverse) e rifiltrata con lo
+stesso filtro H(z), e infine si ribalta nuovamente il tempo.
+
+Il sistema cosi' realizzato (filtro, time-reverse, filtro, time-reverse) è a
+fase nulla.
+
+Per applicare dunque un filtro con risposta di ampiezza A ci basta applicare il
+metodo citato sopra con un filtro sqrt(A).
