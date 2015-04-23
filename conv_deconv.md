@@ -78,8 +78,8 @@ Il processo viene chiamato deconvoluzione.
 Quando la sequenza x(n) ha durata infinita, è possibile spezzare x(n) in sezioni
 che verranno elaborate tramite convoluzione (circolare). Esistono due metodi:
 
-    - overlap-add
-    - overlap-save
+- overlap-add
+- overlap-save
 
 ### Overlap-Add
 
