@@ -1,4 +1,4 @@
-# Scomposizione in fratti parziali
+# Scomposizione in fratte parziali
 
 Per scomporre un polinomio in frazioni parziali, mi è stato molto utile questo
 corso:
