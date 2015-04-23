@@ -16,11 +16,11 @@ La finestra ci permette di considerare il segnale solo nel range che
 desideriamo.
 
 Prendiamo come esempio la funzione `cos(ωt)`. Per definizione il suo spettro
-dovrebbe essere 0 per frequenze diverse da ω. Se andiamo ad applicare una
+dovrebbe essere `0` per frequenze diverse da `ω`. Se andiamo ad applicare una
 finestra rettangolare lo spettro della sinusoide non appare più come un impulso
-unitario in ω, ma comprende delle frequenze con ampiezza diversa da 0, e in
+unitario in `ω`, ma comprende delle frequenze con ampiezza diversa da `0`, e in
 particolare, le ampiezze saranno più accentuate vicino a ω, e comunque spalmate
-in tutto lo spettro. Questo effetto  viene detto leakage spettrale.
+in tutto lo spettro. Questo effetto viene detto leakage spettrale.
 
 ![Leakage](https://upload.wikimedia.org/wikipedia/commons/f/f6/Spectral_leakage_from_a_sinusoid_and_rectangular_window.png)
 
@@ -35,15 +35,15 @@ indistinguibili.
 La finestra rettangolare ha una risoluzione spettrale eccellente per sinusoidi
 di forza comparabile, ma è una scelta povera per sinusoidi a diverse ampiezze.
 
-[Spectral Analysis on Wikipedia] (https://en.wikipedia.org/wiki/Window_function#Spectral_analysis)
+[Spectral Analysis on Wikipedia](https://en.wikipedia.org/wiki/Window_function#Spectral_analysis)
 
 ## Analisi in frequenza mediante DTFT o DFT
 
 Se il segnale da osservare è analogico, lo filtreremo con un low-pass e campioneremo
-con frequenza di campionamento `f > 2B` (con B larghezza di banda).
+con frequenza di campionamento `f > 2B` (con `B` larghezza di banda).
 
 Il limite che ci pone il campionamento è l'impossibilità di distinguere
-frequenze con separazione inferiore a `1 / LT`. (con L numero di campioni).
+frequenze con separazione inferiore a `1 / LT`. (con `L` numero di campioni).
 
 Campionando una sinuoside all'interno di una finestra rettangolare otteniamo uno
 spettro con un lobo primario in prossimità della frequenza della sinusoide, e
@@ -69,6 +69,6 @@ finestra rettangolare.
 
 L'attenuazione dei lobi secondari si ha a spese dell'allargamento del lobo
 principale e quindi a spese di una perdita di risoluzione, che viene compensata
-se si aumenta L.
+se si aumenta `L`.
 
-Lo spettro di solito viene valutato tramite FFT su una sequenza di durata L, che coincide con la DTFT campionata su L punti equidistanziati nell'intervallo `[0, 2pi]`
+Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, che coincide con la DTFT campionata su `L` punti equidistanziati nell'intervallo `[0, 2pi]`

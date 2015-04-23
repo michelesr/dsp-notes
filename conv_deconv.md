@@ -6,11 +6,11 @@ Per risposta impulsiva si intende la risposta del sistema a un impulso unitario.
 
     u(n): 1 if n == 0, else 0
 
-Per il sistema s vale:
+Per il sistema `s` vale:
 
     h(n) = s(u(n))
 
-h(n) sarà quindi la risposta impulsiva del sistema s.
+`h(n)` sarà quindi la risposta impulsiva del sistema `s`.
 
 ## Convoluzione
 
@@ -22,7 +22,6 @@ nel dominio temporale, abbiamo che il segnale di uscita è dato dalla seguente
 relazione:
 
 <!-- y(n) = conv(x(n), h(n)) = sum for k -> [-inf,+inf] : x(k)h(n-k) --->
-
 ![Convolution](http://latex.codecogs.com/gif.latex?y%28n%29%20%3D%20x%28n%29%20%5Cotimes%20h%28n%29%20%3D%20%5Csum_%7Bk%3D-%5Cinfty%7D%5E%7B%5Cinfty%7D%20x%28k%29h%28n-k%29)
 
 Il processo di convoluzione gode delle seguenti proprietà:
@@ -59,7 +58,7 @@ delle lunghezze delle sequenze di input meno 1. `(3+4-1 = 6)`
 
 ## Convoluzione circolare
 
-La convoluzione circolare è un tipo di convoluzione che lavora con sequenze
+La *convoluzione circolare* è un tipo di convoluzione che lavora con sequenze
 periodiche.
 
 A differenza della convoluzione lineare, quella circolare produce una sequenza
@@ -86,7 +85,7 @@ ingresso `x(n)` tramite la seguente relazione:
 
 ![Deconvolution](http://latex.codecogs.com/gif.latex?x%28n%29%20%3D%20%5Cfrac%7By%28n%29%20-%20%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%20h%28k%29x%28n-k%29%7D%5E%7Bh%280%29%7D)
 
-Il processo viene chiamato deconvoluzione.
+Il processo viene chiamato *deconvoluzione*.
 
 ## Convoluzione per sezioni
 
@@ -98,11 +97,11 @@ che verranno elaborate tramite convoluzione (circolare). Esistono due metodi:
 
 ### Overlap-Add
 
-Nel metodo overlap add si spezza `X(n)` in sequenze adiacenti `Xm(n)` di durata N,
+Nel metodo overlap add si spezza `X(n)` in sequenze adiacenti `Xm(n)` di durata `N`,
 si vanno poi ad aggiungere `M-1` zeri per avere una sequenza di durata `L = M+N-1`
-(M in questo caso si riferisce alla durata del `h(n)`), infine si calcola la
+(`M` in questo caso si riferisce alla durata del `h(n)`), infine si calcola la
 convoluzione tra `Xm(n)` e `h(n)` tramite FFT, prodotto e IFFT, e infine si sommano
-gli M-1 campioni finali della `Ym(n)` ottenuta con i primi `(M-1)` campioni della
+gli `M-1` campioni finali della `Ym(n)` ottenuta con i primi `(M-1)` campioni della
 sequenza di uscita successiva.
 
 ![Overlap-Add](https://upload.wikimedia.org/wikipedia/commons/7/77/Depiction_of_overlap-add_algorithm.png)
@@ -112,7 +111,7 @@ sequenza di uscita successiva.
 
 ### Overlap-Save
 
-Nel metodo overlap save si spezza `X(n)` in sequenze adiacenti `Xm(n)` di durata L,
+Nel metodo overlap save si spezza `X(n)` in sequenze adiacenti `Xm(n)` di durata `L`,
 senza aggiungere zeri ma semplicemente considerando il valore dei campioni.
 
 In questo modo, si ha che i primi `(M-1)` campioni di `Xm(n)` sono gli stessi `(M-1)`
