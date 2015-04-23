@@ -1,6 +1,6 @@
 # Analisi spettrale
 
-Prima di passare agli appunti del corso un chiarimento da wikipedia.
+Prima di passare agli appunti del corso un chiarimento che ho elaborato a partire da wikipedia-en.
 
 ## Introduzione da Wikipedia
 
