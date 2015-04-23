@@ -1,4 +1,4 @@
-# Convoluzione e Deconvoluzione
+# Convoluzione
 
 ## Risposta impulsiva
 
@@ -33,11 +33,19 @@ Il processo di convoluzione gode delle seguenti proprietà:
 
 ![Convolution](https://upload.wikimedia.org/wikipedia/commons/b/b9/Convolution_of_spiky_function_with_box2.gif)
 
+## Teorema di convoluzione
+
 Vale la seguente relazione:
 
 <!--- y(n) = conv(x(n),h(n)) = IDTFT(DTFT(x(n))DTFT(h(n))) --->
     
 ![Convolution and DTFT](http://latex.codecogs.com/gif.latex?y%28n%29%20%3D%20x%28n%29%20%5Cotimes%20h%28n%29%20%3D%20IDTFT%20%28X%28%5Ciota%20%5Comega%29H%28%5Ciota%20%5Comega%29%29)
+
+Ovvero quello che nel dominio del tempo è una convoluzione si trasforma in un prodotto nel dominio delle frequenze.
+
+Il teorema vale anche al contrario, ovvero la convoluzione nel dominio della frequenza è un prodotto nel dominio del tempo.
+
+## Convoluzione lineare
 
 DTFT(h(n)) è la risposta in frequenza del sistema, mentre DTFT(x(n)) è lo
 spettro del segnale.
