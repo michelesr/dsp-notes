@@ -6,11 +6,11 @@ Per risposta impulsiva si intende la risposta del sistema a un impulso unitario.
 
     u(n): 1 if n == 0, else 0 
 
-Per il sistema s(n) vale:
+Per il sistema s vale:
 
     h(n) = s(u(n))
 
-h(n) sarà quindi la risposta impulsiva del sistema s(n).
+h(n) sarà quindi la risposta impulsiva del sistema s.
 
 ## Convoluzione
 
