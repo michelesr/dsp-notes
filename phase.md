@@ -90,3 +90,16 @@ I quattro tipi di fitri differiscono per la disposizione degli zeri in +1 e -1:
 3. numero dispari di zeri in +1 ed un numero dispari di zeri in -1
 4. numero dispari di zeri in +1 e un numero pari (o nullo) di zeri in
    -1
+
+## Il caso degli IIR
+
+I filtri a risposta impulsiva infinita possono solo approssimare la fase lineare
+ma non possono ottenerla con perfezione, inoltre la condizione di stabilità non
+è sempre verificata come nel caso dei FIR.
+
+## Poli e zeri
+
+Se vogliamo accentuare alcune componenti in frequenza del segnale dovremo
+posizionare i poli vicino al circolo unitario attorno a queste frequenze, mentre
+se vogliamo attenuare le componenti in frequenza dovremo posizionare gli zeri
+vicino al circolo unitario attorno a queste frequenze.
