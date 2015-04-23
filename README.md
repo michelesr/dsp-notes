@@ -8,3 +8,5 @@ Ebbene si, l'esame si avvicina e non rimane molto tempo, ma ho notato che l'unic
 Quindi, se anche voi dovete preparare questo esame (o magari un'esame simile) vi invito a dare un'occhiata e perchè no, anche contribuire.
 
 Se volete contribuire, fatemi pure una pull request o ancora meglio segnalatemi il vostro username così vi aggiungo ai contributori. L'obiettivo è avere un unica dispensa in modo da non dover cercare cose quà e là sui diversi repository git.
+
+Se notate qualche incongruenza, segnalatemela al mio indirizzo email (che trovate sul mio profilo github).
