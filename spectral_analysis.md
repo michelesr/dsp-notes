@@ -57,10 +57,10 @@ Per ridurre i lobi secondari, che influiscono in male sulla risoluzione
 spettrale, possiamo adottare delle funzioni finestre alternative. Nel nostro
 corso vanno molto di moda le seguenti:
 
-    Hamming(n) = 0.54 - 0.46 cos (2pin/(L-1)) for n in [0, L-1],
+    Hamming(n) = 0.54 - 0.46 cos (2pin/(L-1)) if n in [0, L-1],
                  0 otherwise
                  
-    Hanning(n) = 0.5 - 0.5 cos (2pin/(L-1)) for n in [0, L-1],
+    Hanning(n) = 0.5 - 0.5 cos (2pin/(L-1)) if n in [0, L-1],
                  0 otherwise
 
 Utilizzando queste finestre gli spettri hanno dei lobi secondari molto più
