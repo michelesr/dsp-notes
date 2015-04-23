@@ -17,3 +17,4 @@ Se notate qualche incongruenza, aprite un issue.
 - [Scomposizione in fratte parziali](partial_fraction.md)
 - [Fase](phase.md)
 - [Immagini](images.md)
+- [Funzioni di trasferimento](transfer_functions.md) (esericizi)
