@@ -66,6 +66,8 @@ metodo citato sopra con un filtro sqrt(A).
 
 ## FIR a fase lineare
 
+![FIR](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FIR_Filter.svg/800px-FIR_Filter.svg.png)
+
 Un filtro FIR è a fase lineare sse la sua risposta impulsiva è simmetrica,
 ovvero per un filtro a durata N deve valere: 
 
