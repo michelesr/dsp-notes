@@ -93,4 +93,8 @@ L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la 
 
     ![](http://latex.codecogs.com/gif.latex?k_4%20%3D%20-%5Cfrac%7B1%7D%7B2%7D%2C%20k_3%20%3D%20%5Cfrac%7B1%7D%7B2%7D%2C%20k_2%20%3D%20-2%2C%20k_1%20%3D%202)
 
+6. infine disegniamo il diagramma a traliccio
+
+    ![](images/lattice.png)
+
 ### Traliccio-scala
