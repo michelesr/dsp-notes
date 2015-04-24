@@ -114,6 +114,6 @@ posizionare i poli vicino al circolo unitario attorno a queste frequenze, mentre
 se vogliamo attenuare le componenti in frequenza dovremo posizionare gli zeri
 vicino al circolo unitario attorno a queste frequenze.
 
-Che significa? A intuito direi che possiamo pensare al circolo di raggio unitario come un cerchio centrato nell'origine e di raggio `1`. I numeri (complessi) che stanno all'interno di questo circolo avranno modulo `< 1`, all'esterno `> 1` e sopra il circolo stesso `= 1` . Ora, se i zeri o i poli devono stare vicino al circolo di raggio unitario significa che il loro modulo dev'essere all'incirca `1`, mentre la loro fase può variare nell'intervallo `[0, 2π]`, ed è proprio la fase dei poli che determina quali frequenze verrano influenzate maggiormente dal filtro. (
+Che significa? A intuito direi che possiamo pensare al circolo di raggio unitario come un cerchio centrato nell'origine e di raggio `1`. I numeri (complessi) che stanno all'interno di questo circolo avranno modulo `< 1`, all'esterno `> 1` e sopra il circolo stesso `= 1` . Ora, se i zeri o i poli devono stare vicino al circolo di raggio unitario significa che il loro modulo dev'essere all'incirca `1`, mentre la loro fase può variare nell'intervallo `[0, 2π]`, ed è proprio la fase dei poli che determina quali frequenze verrano influenzate maggiormente dal filtro.
 
 Ricordiamo che la risposta in frequenza di un sistema viene valutata calcolando il valore di H(z) per z = `e^(iω)`.
