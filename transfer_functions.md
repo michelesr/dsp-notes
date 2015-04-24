@@ -63,4 +63,6 @@ L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la 
 
 ### Traliccio
 
+![Example 1](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20&plus;%20z%5E%7B-4%7D)
+
 ### Traliccio-scala
