@@ -20,6 +20,8 @@ e filtrando il segnale con un passabasso ideale.
 
 ### Considerazioni
 
+    delta(n) = 1 if x == 0, 0 otherwise
+
 Come potete vedere, l'argomento della funzione delta si annulla per `t - nT = 0` ovvero per `n = t/T`, in questo modo "selezionamo" `n` in modo da restituirci il campione relativo all'istante `t`.
 
 #### Un piccolo esempio
