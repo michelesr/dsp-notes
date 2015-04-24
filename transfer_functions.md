@@ -71,6 +71,8 @@ Come la diretta II, in cui bisogna:
 
 L'obiettivo e' ottenere il prodotto di piu' polinomi, principalmente attraverso la *fattorizzazione*.
 
+![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%20%5Ccdot%20%5Cfrac%7B%20%5Cfrac%7B4%7D%7B3%7D%20-%5Cfrac%7B7%7D%7B2%7Dz%5E%7B-1%7D%20-%5Cfrac%7B4%7D%7B3%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B2%7D%7B5%7Dz%5E%7B-1%7D%20-%5Cfrac%7B7%7D%7B9%7Dz%5E%7B-2%7D%20%7D)
+
 ![](images/serial.png)
 
 ### Parallelo
