@@ -63,6 +63,26 @@ L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la 
 
 ### Traliccio
 
-![Example 1](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20&plus;%20z%5E%7B-4%7D)
+    ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-4%7D)
+
+1. Vediamo che il primo coefficiente e' gia' `1`, quindi ok
+
+2. Prendiamo il primo `k` (ultimo coefficiente)
+
+    ![](http://latex.codecogs.com/gif.latex?k_4%20%3D%20-%20%5Cfrac%7B1%7D%7B2%7D)
+
+3. sottraiamo `k * H(z) a coefficienti invertiti`
+
+    ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-4%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7D%20%28-%20%5Cfrac%7B1%7D%7B2%7D%20&plus;%202z%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-3%7D%20&plus;%20z%5E%7B-4%7D%29)
+
+4. otteniamo
+
+    ![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B3%7D%7B4%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B3%7D%7B8%7Dz%5E%7B-3%7D)
+
+5. dato che il primo coefficiente e' `!= 1`, moltiplichiamo di conseguenza
+
+    ![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B4%7D%7B3%7D%20%28%20%5Cfrac%7B3%7D%7B4%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B3%7D%7B8%7Dz%5E%7B-3%7D%20%29%20%3D%201%20-3z%5E%7B-1%7D%20-3z%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D)
+
+6. a questo punto ripetiamo fino ad ottenere 4 `k`
 
 ### Traliccio-scala
