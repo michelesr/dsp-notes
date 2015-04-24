@@ -14,7 +14,7 @@ ricostruibile dai suoi campioni, dobbiamo campionarlo con frequenza di
 campionamento almeno pari a due volte la larghezza di banda. Il segnale potrà
 essere ricostruito generando:
 
-![Digital->Analog](http://latex.codecogs.com/gif.latex?g_p%28t%29%20%3D%20%5Csum_%7Bn%20%3D%20-%5Cinfty%7D%5E%7B%5Cinfty%7Dg%28n%29%5Cdelta%28t%20-%20nt%29)
+![Digital->Analog](http://latex.codecogs.com/gif.latex?g_p%28t%29%20%3D%20%5Csum_%7Bn%20%3D%20-%5Cinfty%7D%5E%7B%5Cinfty%7Dg%28n%29%5Cdelta%28t%20-%20nT%29)
 
 e filtrando il segnale con un passabasso ideale.
 
