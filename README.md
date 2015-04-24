@@ -19,3 +19,4 @@ Se notate qualche incongruenza, aprite un issue.
 - [Fase](phase.md)
 - [Immagini](images.md)
 - [Funzioni di trasferimento](transfer_functions.md) (esercizi)
+- [Fast Fourier Transform](fft.md)
