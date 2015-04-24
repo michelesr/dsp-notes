@@ -15,7 +15,6 @@ Se notate qualche incongruenza, aprite un issue.
 - [Teoremi](theorems.md)
 - [Convoluzione e deconvoluzione](conv_deconv.md)
 - [Analisi spettrale](spectral_analysis.md)
-- [Fast Fourier Transform](fft.md)
 - [Fase](phase.md)
 - [Immagini](images.md)
 - [Funzioni di trasferimento](transfer_functions.md) (esercizi)
