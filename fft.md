@@ -15,8 +15,12 @@ Infatti, il calcolo di tutti i valori della sequenza `X(k)` richiede `N^2` prodo
 complesse, ma se spezziamo il calcolo in sequenze dimezzate avremo `2(N/2)^2` e
 `2(N/2)(N/2-1)` somme complesse. 
 
-La scomposizione applicata in maniera ricorsiva ci porta al calcolo di `N/2` FFT
+La scomposizione applicata in maniera ricorsiva ci porta al calcolo di `N/2` `fft`
 di sequenze a durata `2`.
+
+D'ora in poi useremo questa relazione:
+
+![WN](http://latex.codecogs.com/gif.latex?W_N%5E%7Bk%7D%20%3D%20e%5E%7B-%5Ciota%20%5Cfrac%7B2%5Cpi%7D%7BN%7D%20%7D)
 
 Ci son due metodi applicabili:
 
@@ -25,4 +29,18 @@ Ci son due metodi applicabili:
 
 ## Decimazione nel tempo
 
+Separiamo `x(n)` in due sequenze `x(2n)` e `x(2n+1)`, ovvero la prima ha gli elementi che nella sequenza originale avevano gli indici pari, mentre la seconda ha quelli con gli indici dispari.
+
+La `DFT` `X(k)` è la somma di `2` `DTF` di lunghezza `N/2`:
+
+![FFT(k)](http://latex.codecogs.com/gif.latex?X%28k%29%20%3D%20X_1%28k%29%20&plus;%20W_N%5E%7Bk%7DX_2%28k%29)
+
+![FFT2(k)](http://latex.codecogs.com/gif.latex?X%28k&plus;%20%5Cfrac%7BN%7D%7B2%7D%29%20%3D%20X_1%28k%29%20-%20W_N%5E%7Bk%7DX_2%28k%29)
+
+con `k` nell'intervallo `[0, N/2 - 1]`
+
+![Time-decimation](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DIT-FFT-butterfly.png/738px-DIT-FFT-butterfly.png)
+
 ## Decimazione nella frequenza
+
+TODO
