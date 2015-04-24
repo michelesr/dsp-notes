@@ -54,7 +54,7 @@ Si disegna direttamente, di seguito un filtro FIR.
 
 E' sufficiente avere l'`1` come il coefficiente di `z^0` al denominatore.
 
-![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-3%7D%20&plus;%20z%5E%7B-4%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-3%7D%20&plus;%20%5Cfrac%7B1%7D%7B3%7Dz%5E%7B-4%7D%20%7D)
+![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-3%7D%20&plus;%20z%5E%7B-4%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-3%7D%20&plus;%20%5Cfrac%7B1%7D%7B3%7Dz%5E%7B-4%7D%20%7D)
 
 ![](images/direct2.png)
 
