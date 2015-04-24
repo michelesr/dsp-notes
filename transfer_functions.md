@@ -43,11 +43,13 @@ In vari casi e' richiesto di determinare la stabilita' del filtro in senso BIBO.
 
 ### Diretta II
 
-E' sufficiente avere l'`1` come il coefficiente di `z^0` al denominatore.
+- Filtro FIR
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-4%7D)
 
 ![](images/direct.png)
+
+- Filtro IIR:  e' sufficiente avere l'`1` come il coefficiente di `z^0` al denominatore.
 
 ### Diretta II trasposta
 
@@ -88,5 +90,7 @@ L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la 
     ![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B4%7D%7B3%7D%20%28%20%5Cfrac%7B3%7D%7B4%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B3%7D%7B8%7Dz%5E%7B-3%7D%20%29%20%3D%201%20-3z%5E%7B-1%7D%20-3z%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D)
 
 5. a questo punto ripetiamo fino ad ottenere 4 `k`
+
+    ![](http://latex.codecogs.com/gif.latex?k_4%20%3D%20-%5Cfrac%7B1%7D%7B2%7D%2C%20k_3%20%3D%20%5Cfrac%7B1%7D%7B2%7D%2C%20k_2%20%3D%20-2%2C%20k_1%20%3D%202)
 
 ### Traliccio-scala
