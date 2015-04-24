@@ -18,4 +18,16 @@ essere ricostruito generando:
 
 e filtrando il segnale con un passabasso ideale.
 
+### Considerazioni
+
+Come potete vedere, l'argomento della funzione delta si annulla per `t - nT = 0` ovvero per `n = t/T`, in questo modo "selezionamo" `n` in modo da restituirci il campione relativo all'istante `t`.
+
+#### Un piccolo esempio
+
+Campionamo un segnale con frequenza di campionamento `ΩT = 200Hz`, il che significa che potremmo avere fedeltà fino a `100hz` di larghezza di banda. Il segnale analogico al tempo `2s` equivale al campione 200 della nostra sequenza campionata.
+
+`ga(2) = g(2 * 200)` ovvero `ga(t) = g(t/T)`
+
+### Aliasing
+
 Per evitare distorsioni dovute all'aliasing, prima di campionare il segnale lo si filtra con un low-pass (detto `anti-aliasing`) che genera un segnale a banda limitata. Il segnale viene campionato poi con frequenza `|ΩT| > |2Ωm|`. Anche il segnale di uscita è filtrato con un low-pass detto `reconstruction-filter`.
