@@ -36,7 +36,6 @@ Tipi di realizzazione:
 - diretta II
 - diretta II trasposta
 - parallela di 2 filtri del secondo ordine, con diretta II
-- parallela di 2 filtri del secondo ordine, con diretta II trasposta
 - traliccio
 - traliccio-scala
 
@@ -72,9 +71,15 @@ Come la diretta II, in cui bisogna:
 
 L'obiettivo e' ottenere il prodotto di piu' polinomi, principalmente attraverso la *fattorizzazione*.
 
+![](images/serial.png)
+
 ### Parallelo
 
 L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la *scomposizione in fratte parziali*.
+
+![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%20&plus;%20%5Cfrac%7B%20%5Cfrac%7B4%7D%7B3%7D%20-%5Cfrac%7B7%7D%7B2%7Dz%5E%7B-1%7D%20-%5Cfrac%7B4%7D%7B3%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B2%7D%7B5%7Dz%5E%7B-1%7D%20-%5Cfrac%7B7%7D%7B9%7Dz%5E%7B-2%7D%20%7D)
+
+![](images/parallel.png)
 
 ### Traliccio
 
