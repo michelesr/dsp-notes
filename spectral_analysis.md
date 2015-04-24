@@ -71,4 +71,31 @@ L'attenuazione dei lobi secondari si ha a spese dell'allargamento del lobo
 principale e quindi a spese di una perdita di risoluzione, che viene compensata
 se si aumenta `L`.
 
-Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, che coincide con la DTFT campionata su `L` punti equidistanziati nell'intervallo `[0, 2pi]`
+Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, che coincide con la DTFT campionata su `L` punti equidistanziati nell'intervallo `[0, 2π]`
+
+Ricordiamo che lo spettro della DTFT (e quindi anche della DFT) è periodico di periodo `2π` e che se la sequenza è reale allora il suo spettro è a simmetria coniugata (di conseguenza le frequenze nell'intervallo `[0,π]` hanno la stessa parte reale e lo stesso modulo di quelle nell'intervallo `[2π, π]`, ma hanno parte immaginaria con segno opposto e quindi fasi diverse).
+
+    # FFT Tramite octave, il primo elemento dell'array non sembra avere senso fisico
+    # ma gli altri hanno tutti simmetria coniugata
+    octave:5> a = fft([1,2,3,4,5,6,7,8])
+    a =
+    36.0000 +  0.0000i   
+    -4.0000 +  9.6569i   
+    -4.0000 +  4.0000i   
+    -4.0000 +  1.6569i   
+    -4.0000 +  0.0000i   
+    -4.0000 -  1.6569i   
+    -4.0000 -  4.0000i 
+    -4.0000 -  9.6569i
+
+    # moduli
+    octave:6> abs(a)
+    ans =
+    36.0000   10.4525    5.6569    4.3296    4.0000    4.3296    5.6569   10.4525
+    
+    # fasi
+    octave:7> arg(a)
+    ans =
+    0.00000   1.96350   2.35619   2.74889   3.14159  -2.74889  -2.35619  -1.96350
+
+
