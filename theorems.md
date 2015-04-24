@@ -3,9 +3,9 @@
 ## Teorema del Campionamento (Nyquist-Shannon)
 
 Sia `ga(t)` un segnale analogico a banda limitata con `Ga(iΩ) = 0`, per
-`|Ωm| > |Ωm|` `Ga(t)` è totalmente determinato dai suoi campioni ga(nt), e può
+`|Ω| > |Ωm|` `Ga(t)` è totalmente determinato dai suoi campioni ga(nt), e può
 essere fedelmente ricostruito dai campioni ga(nt) per `n in [-inf,+inf]`, se la
-frequenz angolare di campionamento `ΩT >= 2Ωm` con `ΩT >= 2π/T`.
+frequenza angolare di campionamento `ΩT >= 2Ωm` con `ΩT >= 2π/T`.
 
 In altre parole, se vogliamo che il segnale a banda limitata `ga(t)` sia
 ricostruibile dai suoi campioni, dobbiamo campionarlo con frequenza di
