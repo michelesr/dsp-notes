@@ -18,4 +18,3 @@ Se notate qualche incongruenza, aprite un issue.
 - [Fase](phase.md)
 - [Immagini](images.md)
 - [Funzioni di trasferimento](transfer_functions.md) (esercizi)
-- [Teoremi](theorems.md)
