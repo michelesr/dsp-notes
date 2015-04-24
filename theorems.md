@@ -5,8 +5,8 @@
 (Nota: per `ΩT` si intende la frequenza di campionamento, e non il prodotto di `Ω` e `T`)
 
 Sia `ga(t)` un segnale analogico a banda limitata con `Ga(iΩ) = 0`, per
-`|Ω| > |Ωm|` `Ga(t)` è totalmente determinato dai suoi campioni `ga(nt)`, e può
-essere fedelmente ricostruito dai campioni `ga(nt)` per `n in [-inf,+inf]`, se la
+`|Ω| > |Ωm|` `Ga(t)` è totalmente determinato dai suoi campioni `ga(nT)`, e può
+essere fedelmente ricostruito dai campioni `ga(nT)` per `n in [-inf,+inf]`, se la
 frequenza angolare di campionamento `ΩT >= 2Ωm` con `ΩT >= 2π/T`.
 
 In altre parole, se vogliamo che il segnale a banda limitata `ga(t)` sia
