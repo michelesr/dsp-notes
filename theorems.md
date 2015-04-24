@@ -26,7 +26,7 @@ Come potete vedere, l'argomento della funzione delta si annulla per `t - nT = 0`
 
 #### Un piccolo esempio
 
-Campionamo un segnale con frequenza di campionamento `ΩT = 200Hz`, il che significa che potremmo avere fedeltà fino a `100hz` di larghezza di banda. Il segnale analogico al tempo `2s` equivale al campione 200 della nostra sequenza campionata.
+Campionamo un segnale con frequenza di campionamento `ΩT = 200Hz`, il che significa che potremmo avere fedeltà fino a `100hz` di larghezza di banda. Il segnale analogico al tempo `2s` equivale al campione `400` della nostra sequenza campionata.
 
 `ga(2) = g(2 * 200)` ovvero `ga(t) = g(t/T)`
 
