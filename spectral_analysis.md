@@ -75,6 +75,8 @@ Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, c
 
 Ricordiamo che lo spettro della DTFT (e quindi anche della DFT) è periodico di periodo `2π` e che se la sequenza è reale allora il suo spettro è a simmetria coniugata (di conseguenza le frequenze nell'intervallo `[0,π]` hanno la stessa parte reale e lo stesso modulo di quelle nell'intervallo `[2π, π]`, ma hanno parte immaginaria con segno opposto e quindi fasi diverse).
 
+### Periodicità e simmetria coniugata
+
     # FFT Tramite octave, il primo elemento dell'array non sembra avere senso fisico
     # ma gli altri hanno tutti simmetria coniugata
     octave:5> a = fft([1,2,3,4,5,6,7,8])
