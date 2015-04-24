@@ -60,3 +60,9 @@ Questa tecnica prende il nome di `bit-reversal`.
 ## Decimazione nella frequenza
 
 TODO
+
+## Inverse FFT
+
+L'algoritmo per calcolare la `ifft` è lo stesso utilizzato per il calcolo della
+`fft` con l'accorgimento di sostituire i vari `Wk` con `(Wk)^(-1)` e di dividere
+il risultato finale per `N`.
