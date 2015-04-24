@@ -66,6 +66,8 @@ metodo citato sopra con un filtro sqrt(A).
 
 ## FIR a fase lineare
 
+![FIR](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/FIR_Filter.svg/800px-FIR_Filter.svg.png)
+
 Un filtro FIR è a fase lineare sse la sua risposta impulsiva è simmetrica,
 ovvero per un filtro a durata N deve valere: 
 
@@ -87,9 +89,17 @@ I quattro tipi di fitri differiscono per la disposizione degli zeri in +1 e -1:
 1. numero pari (o nullo) di zeri in +1 e -1 
 2. numero pari (o nullo) di zeri in +1 e un numero dispari di zeri in
    -1
-3. numero dispari di zeri in +1 ed un numero dispari di zeri in -1
-4. numero dispari di zeri in +1 e un numero pari (o nullo) di zeri in
+3. numero dispari di zeri in +1 e un numero pari (o nullo) di zeri in
    -1
+4. numero dispari di zeri in +1 ed un numero dispari di zeri in -1
+
+
+| tipo | simmetrico | lunghezza | zeri pari  | zeri dispari |
+|:----:|:----------:|:---------:|:----------:|:------------:|
+| 1    |    simm    |   pari    |  -1 +1     |              |
+| 2    |    simm    |  dispari  |    +1      |      -1      |
+| 3    |    anti    |   pari    |    -1      |      +1      |
+| 4    |    anti    |  dispari  |            |    -1 +1     |
 
 ## Il caso degli IIR
 
