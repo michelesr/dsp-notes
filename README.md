@@ -12,6 +12,7 @@ Se notate qualche incongruenza, aprite un issue.
 
 ## Index
 
+- [Teoremi](theorems.md)
 - [Convoluzione e deconvoluzione](conv_deconv.md)
 - [Analisi spettrale](spectral_analysis.md)
 - [Fase](phase.md)
