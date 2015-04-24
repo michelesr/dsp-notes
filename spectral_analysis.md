@@ -73,9 +73,9 @@ se si aumenta `L`.
 
 Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, che coincide con la DTFT campionata su `L` punti equidistanziati nell'intervallo `[0, 2π]`
 
-Ricordiamo che lo spettro della DTFT (e quindi anche della DFT) è periodico di periodo `2π` e che se la sequenza è reale allora il suo spettro è a simmetria coniugata (di conseguenza le frequenze nell'intervallo `[0,π]` hanno la stessa parte reale e lo stesso modulo di quelle nell'intervallo `[2π, π]`, ma hanno parte immaginaria con segno opposto e quindi fasi diverse).
-
 ### Periodicità e simmetria coniugata
+
+Ricordiamo che lo spettro della DTFT (e quindi anche della DFT) è periodico di periodo `2π` e che se la sequenza è reale allora il suo spettro è a simmetria coniugata (di conseguenza le frequenze nell'intervallo `[0,π]` hanno la stessa parte reale e lo stesso modulo di quelle nell'intervallo `[2π, π]`, ma hanno parte immaginaria con segno opposto e quindi fasi opposte).
 
     # FFT Tramite octave, il primo elemento dell'array non sembra avere senso fisico
     # ma gli altri hanno tutti simmetria coniugata
