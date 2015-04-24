@@ -47,3 +47,5 @@ Il teorema di Parseval è presente in diverse forme e principalmente ci dice che
 ![Parseval-DTFT-2](http://latex.codecogs.com/gif.latex?%5Csum_%7Bn%20%3D%20-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7Dg%28n%29h%5E*%28n%29%20%3D%20%5Cfrac%7B1%7D%7B2%5Cpi%7D%7B%7D%5Cint_%7B-%5Cpi%7D%5E%7B&plus;%5Cpi%7DG%28e%5E%7B%5Ciota%5Comega%7D%29H%5E*%28e%5E%7B%5Ciota%5Comega%7D%29d%5Comega)
 
 ![Parseval-DTFT](http://latex.codecogs.com/gif.latex?%5Csum_%7Bn%20%3D%20-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7D%7Cx%28n%29%7C%5E2%20%3D%20%5Cfrac%7B1%7D%7B2%5Cpi%7D%7B%7D%5Cint_%7B-%5Cpi%7D%5E%7B&plus;%5Cpi%7D%7CX%28e%5E%7B%5Ciota%5Comega%7D%29%7C%5E2d%5Comega)
+
+Queste sommatorie dei quadrati delle funzioni ci danno le "energie" dei vari segnali.
