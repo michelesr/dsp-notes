@@ -41,6 +41,22 @@ con `k` nell'intervallo `[0, N/2 - 1]`
 
 ![Time-decimation](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DIT-FFT-butterfly.png/738px-DIT-FFT-butterfly.png)
 
+Com'è possibile notare dal disegno, la sequenza trasformata ha gli indici
+permutati, dunque come troviamo l'indice che ci serve? Basta invertire (leggerli
+al contrario e non prenderne la negazione!) i bit del
+nostro indice!
+
+    0 = 000 -- 000 = 0
+    1 = 001 -- 100 = 4
+    2 = 010 -- 010 = 2
+    3 = 011 -- 110 = 6
+    4 = 100 -- 001 = 1
+    5 = 101 -- 101 = 5
+    6 = 110 -- 011 = 3
+    7 = 111 -- 111 = 7
+
+Questa tecnica prende il nome di `bit-reversal`.
+
 ## Decimazione nella frequenza
 
 TODO
