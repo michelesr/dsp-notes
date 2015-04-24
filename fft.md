@@ -27,6 +27,8 @@ Ci son due metodi applicabili:
 - decimazione nel tempo
 - decimazione nella frequenza
 
+In entrambi i casi la complessità computazionale è `O(N logN)`.
+
 ## Decimazione nel tempo
 
 Separiamo `x(n)` in due sequenze `x(2n)` e `x(2n+1)`, ovvero la prima ha gli elementi che nella sequenza originale avevano gli indici pari, mentre la seconda ha quelli con gli indici dispari.
@@ -42,9 +44,10 @@ con `k` nell'intervallo `[0, N/2 - 1]`
 ![Time-decimation](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DIT-FFT-butterfly.png/738px-DIT-FFT-butterfly.png)
 
 Com'è possibile notare dal disegno, la sequenza trasformata ha gli indici
-permutati, dunque come troviamo l'indice che ci serve? Basta invertire (leggerli
-al contrario e non prenderne la negazione!) i bit del
+permutati, dunque come troviamo l'indice che ci serve? Basta invertire i bit del
 nostro indice!
+
+Per invertire si intende leggere al contrario, e non prendere la negazione del bit.
 
     0 = 000 -- 000 = 0
     1 = 001 -- 100 = 4
