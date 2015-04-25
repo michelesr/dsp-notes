@@ -40,6 +40,12 @@ Il filtro gode di simmetria radiale, ed è quindi completamente definito da una 
 
 Altri tipi di filtri sono il filtro [Butterworth](https://en.wikipedia.org/wiki/Butterworth_filter), che riduce lo `smoothing` ma elimina l'effetto `ringing` e [Gaussiano](https://en.wikipedia.org/wiki/Gaussian_filter), la cui risposta in frequenza e antitrasformata hanno la forma di una [funzione gaussiana](https://en.wikipedia.org/wiki/Gaussian_function).
 
+### Sharpening nel dominio della frequenza
+
+![Sharpening-PIC](https://upload.wikimedia.org/wikipedia/commons/4/43/Unsharped_eye.jpg)
+
+Lo [sharpening](https://en.wikipedia.org/wiki/Sharpen_(digital_image)) nel dominio della frequenza si ottiene con l'applicazione di filtri `passa-alto`, che vanno a tagliare le frequenze al di fuori della `frequenza di taglio`. 
+
 ## Modelli di colore
 
 Partendo dal presupposto che il bianco e' il colore a massima intensita', e il nero quello a minore intensita', sono stati sviluppati diversi [modelli colore](https://it.wikipedia.org/wiki/Modello_di_colore), i cui principali sono RGB, CMYK e HSI.
