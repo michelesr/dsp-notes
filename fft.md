@@ -77,9 +77,9 @@ Costriuamo poi le sequenze `f(n)` e `g(n)` definite come:
 
 Abbiamo infine le seguenti relazioni:
 
-![1](http://latex.codecogs.com/gif.latex?X_1%28n%29%20%3D%20g%28n%29%3D%20%28x_1%28n%29%20-%20x_2%28n%29%29%20W_N%5E%7Bn%7D)
+![1](http://latex.codecogs.com/gif.latex?x_1%28n%29%20%3D%20g%28n%29%3D%20%28x_1%28n%29%20-%20x_2%28n%29%29%20W_N%5E%7Bn%7D)
 
-![2](http://latex.codecogs.com/gif.latex?X_2%28n%29%20%3D%20f%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
+![2](http://latex.codecogs.com/gif.latex?x_2%28n%29%20%3D%20f%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
 
 con `n` nell'intervallo `[0, N/2 - 1]`.
 
@@ -109,9 +109,9 @@ Costruiamo la sequenza `z(n)`:
 
 Per la nostra sequenza vale la seguente relazione:
 
-![FFT-Real-1](http://latex.codecogs.com/gif.latex?x_1%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20&plus;Z%5E*%28%5Cfrac%7BN%7D%7B2%7D-k%29%7D%7B2%7D)
+![FFT-Real-1](http://latex.codecogs.com/gif.latex?X_1%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20&plus;Z%5E*%28%5Cfrac%7BN%7D%7B2%7D-k%29%7D%7B2%7D)
 
-![FFT-Real-2](http://latex.codecogs.com/gif.latex?x_2%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20-Z%5E*%28%5Cfrac%7BN%7D%7B2%7D-k%29%7D%7B2%5Ciota%7D)
+![FFT-Real-2](http://latex.codecogs.com/gif.latex?X_2%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20-Z%5E*%28%5Cfrac%7BN%7D%7B2%7D-k%29%7D%7B2%5Ciota%7D)
 
 ### Con due sequenze reali
 
