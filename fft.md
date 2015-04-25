@@ -43,8 +43,8 @@ con `k` nell'intervallo `[0, N/2 - 1]`
 
 ![Time-decimation](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DIT-FFT-butterfly.png/738px-DIT-FFT-butterfly.png)
 
-Com'è possibile notare dal disegno, la sequenza trasformata ha gli indici
-permutati, dunque come troviamo l'indice che ci serve? Basta invertire i bit del
+Com'è possibile notare dal disegno, la sequenza originale ha gli indici
+permutati, dunque come troviamo l'indice corrispondente nella trasformazione? Basta invertire i bit del
 nostro indice!
 
 Per invertire si intende leggere al contrario, e non prendere la negazione del bit.
@@ -62,7 +62,46 @@ Questa tecnica prende il nome di `bit-reversal`.
 
 ## Decimazione nella frequenza
 
-TODO
+Questa volta spezziamo la sequenza `x(n)` in due sequenze `adiacenti`:
+
+    x1(n) = x(n)        for n in [0, N/2-1]
+    x2(n) = x(n + N/2)  for n in [0, N/2-1]
+
+La `FFT` di `x1(n)` ci da i termini pari mentre quella di `x2(n)` ci da i
+termini dispari.
+
+**STUB**
+
+## FFT di sequenze reali
+
+Se la nostra sequenza è reale, possiamo sfruttare la proprietà di simmetria per
+ridurre il numero di operazioni necessarie.
+
+### Con una sola sequenza reale
+
+Costruiamo la sequenza `z(n)`:
+
+    z(0) = x(0) + ix(1)
+    z(1) = x(2) + ix(3)
+    ...
+    x(N/2-1) = x(N-2) + ix(N-1)
+
+Per la nostra sequenza vale la seguente relazione:
+
+![FFT-Real-1](http://latex.codecogs.com/gif.latex?X_1%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20&plus;Z%5E*%28%5Cfrac%7BN%7D%7B2%7D-k%29%7D%7B2%7D)
+
+![FFT-Real-2](http://latex.codecogs.com/gif.latex?X_2%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20-Z%5E*%28%5Cfrac%7BN%7D%7B2%7D-k%29%7D%7B2%5Ciota%7D)
+
+### Con due sequenze reali
+
+Combiniamo le due sequenze reali `x(n)` e `y(n)` nella sequenza:
+    z(n) = x(n) + iy(n)
+
+Avremo la seguente relazione:
+
+![FFT-Real-3](http://latex.codecogs.com/gif.latex?Y%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20&plus;%20Z%5E*%28N-k%29%7D%7B2%7D)
+
+![FFT-Real-4](http://latex.codecogs.com/gif.latex?Y%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20-Z%5E*%28N-k%29%7D%7B2%5Ciota%7D)
 
 ## Inverse FFT
 
