@@ -20,7 +20,7 @@ di sequenze a durata `2`.
 
 D'ora in poi useremo questa relazione:
 
-![WN](http://latex.codecogs.com/gif.latex?W_N%5E%7Bk%7D%20%3D%20e%5E%7B-%5Ciota%20%5Cfrac%7B2%5Cpi%7D%7BN%7D%20%7D)
+![WN](http://latex.codecogs.com/gif.latex?W_N%5E%7D%20%3D%20e%5E%7B-%5Ciota%20%5Cfrac%7B2%5Cpi%7D%7BN%7D%20%7D)
 
 Ci son due metodi applicabili:
 
