@@ -30,24 +30,36 @@ Partendo dal presupposto che il bianco e' il colore a massima intensita', e il n
 
 ### RGB
 
-[**RGB**](https://it.wikipedia.org/wiki/RGB): Red, Green e Blue sono i colori primari della [mescolanza additiva](https://it.wikipedia.org/wiki/Mescolanza_additiva), ed unendoli viene il bianco (es: luci, display)
+Nel modello [RGB](https://it.wikipedia.org/wiki/RGB), rosso (Red), verde (Green) e blu (Blue) sono i colori primari della [mescolanza additiva](https://it.wikipedia.org/wiki/Mescolanza_additiva), ed unendoli viene il bianco.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/SubtractiveColorMixing.png/200px-SubtractiveColorMixing.png)
+- colori primari: rosso, verde, blu
+- colori secondari: ciano, magenta, giallo
+- utilizzato nelle luci, ad esempio nei display di computer, TV, proiettori, scanner, etc
+- la scala dei grigi consiste nei colori con la stessa intensita' di R, G e B
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AdditiveColorMixiing.svg/200px-AdditiveColorMixiing.svg.png)
+
+Due colori sono [complementari](https://it.wikipedia.org/wiki/Colori_complementari) quando sommati danno come risultato una luce acromatica (senza colore).  Visivamente, sono i colori in posizioni opposte:
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Colorwheel.svg/220px-Colorwheel.svg.png)
 
 ### CMYK
 
-[**CMYK**](https://it.wikipedia.org/wiki/CMYK): Cyan, Magenta, Yellow e Key black sono i colori primari della [mescolanza sottrattiva](https://it.wikipedia.org/wiki/Mescolanza_sottrattiva), ed unendoli viene il nero (es: pigmenti, inchiostro)
+Il modello [CMYK](https://it.wikipedia.org/wiki/CMYK) prende i nomi dai colori primari (Cyan, Magenta, Yellow) e dal nero (Key black) e si basa sulla [mescolanza sottrattiva](https://it.wikipedia.org/wiki/Mescolanza_sottrattiva), infatti unendo i primari si ottiene il nero.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AdditiveColorMixiing.svg/200px-AdditiveColorMixiing.svg.png)
+- colori primari: ciano, magenta, giallo
+- colori secondari: rosso, verde, blu
+- utilizzando per i pigmenti, quindi inchiostro, tempere, stampanti, etc
+- la scala dei grigi consiste nei colori con la stessa intensita' di C, M, Y
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/SubtractiveColorMixing.png/200px-SubtractiveColorMixing.png)
 
 ### HSI
 
 [**HSI**](https://it.wikipedia.org/wiki/Hue_Saturation_Brightness): Hue, Saturation e Intensity, e' una scala alternativa che non prende i colori come base di riferimento
 
+- la scala dei grigi ha saturazione (Saturation) nulla, mentre quando la saturazione e' massima abbiamo colori vivi
+- la tonalita' (Hue) nulla equivale al rosso per convenzione (Hue = 0 -> rosso, Hue = 1/3 -> verde, Hue = 2/3 -> blu)
+- la luminosita' (Intensity) nulla equivale al nero, quella massima al bianco, mentre valori intermedi corrispondono a grigio 50%, e i colori che comunemente chiamano come rosso, arancione, giallo, etc
+
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/HSL_color_solid_dblcone_chroma_gray.png/197px-HSL_color_solid_dblcone_chroma_gray.png)
-
-### Considerazioni
-
-Da notare che RGB e CMYK hanno i colori primari e secondari esattamente alternati, infatti:
-- rosso, verde e blu sono primari nell'additiva, e secondari nella sottrattiva
-- ciano, magenta e giallo sono secondari nell'additiva, e primari nella sottrattiva
