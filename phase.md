@@ -18,13 +18,10 @@ Il ritardo di gruppo ha la seguente forma:
 
 ### Fase lineare
 
-La fase lineare è una proprietà del filtro, che si verifica quando la risposta
-di fase è una funzione lineare della frequenza. Il risultato è che tutte le
-componenti in frequenza del segnale sono spostate nel tempo (ritardate di
-solito) di valore costante, che viene chiamato ritardo di fase.
+La `fase lineare` è una proprietà del filtro, che si verifica quando la `risposta di fase` è una funzione lineare della frequenza. Il risultato è che tutte le componenti in frequenza del segnale sono spostate nel tempo (ritardate di
+solito) di valore costante, che viene chiamato `ritardo di fase`.
 
-In un sistema a fase lineare non ci sono distorsioni di fase dovute al ritardo
-relativo tra le varie frequenze (dato che son ritardate tutte allo stesso modo).
+In un `sistema a fase lineare` non ci sono distorsioni di fase dovute al `ritardo relativo` tra le varie frequenze (dato che son ritardate dello stesso valore costante).
 
 Per sistemi a tempo discreto, la fase lineare perfetta si ottiene tramite
 l'utilizzo di filtri a risposta impulsiva finita (`FIR`) che hanno una risposta
@@ -32,7 +29,7 @@ impulsiva simmetrica.
 
 #### Considerazioni
 
-Nel caso in cui la fase sia `lineare`, il `ritardo di gruppo` e il `ritardo di fase` assumono lo stesso valore costante che definisce il ritardo complessivo del sistema.
+Nel caso in cui la risposta di fase del sistema sia `lineare`, il `ritardo di gruppo` e il `ritardo di fase` assumono lo stesso valore costante, che definisce il ritardo complessivo del sistema.
 
 ### Fase minima
 
