@@ -54,15 +54,15 @@ Se non si opera in real time, le sequenze sono reali e finite, allora possiamo
 realizzare un filtro a fase zero, ovvero un filtro con risposta in frequenza
 rale e positiva. 
 
-Tale filtro si ottiene elaborando x(n) con un sistema a coeficcienti reali H(z).
-L'uscita di questo filtro viene invertita (time-reverse) e rifiltrata con lo
-stesso filtro H(z), e infine si ribalta nuovamente il tempo.
+Tale filtro si ottiene elaborando `x(n)` con un sistema a coeficcienti reali `H(z)`.
+L'uscita di questo filtro viene invertita (`time-reverse`) e rifiltrata con lo
+stesso filtro `H(z)`, e infine si ribalta nuovamente il tempo.
 
-Il sistema cosi' realizzato (filtro, time-reverse, filtro, time-reverse) è a
+Il sistema cosi' realizzato (`filtro`, `time-reverse`, `filtro`, `time-reverse`) è a
 fase nulla.
 
-Per applicare dunque un filtro con risposta di ampiezza A ci basta applicare il
-metodo citato sopra con un filtro sqrt(A).
+Per applicare dunque un filtro con risposta di ampiezza `A` ci basta applicare il
+metodo citato sopra con un filtro `sqrt(A)`.
 
 ## FIR a fase lineare
 
