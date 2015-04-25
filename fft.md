@@ -41,7 +41,7 @@ La `DFT` `X(k)` è la somma di `2` `DTF` di lunghezza `N/2`:
 
 con `k` nell'intervallo `[0, N/2 - 1]`
 
-![Time-decimation](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/DIT-FFT-butterfly.png/738px-DIT-FFT-butterfly.png)
+![Time-decimation](http://cnx.org/resources/657717c02db3efbef5dd37729d676ba1/image4.png)
 
 Com'è possibile notare dal disegno, la sequenza originale ha gli indici
 permutati, dunque come troviamo l'indice corrispondente nella trasformazione? Basta invertire i bit del
