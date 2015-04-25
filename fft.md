@@ -99,7 +99,7 @@ Combiniamo le due sequenze reali `x(n)` e `y(n)` nella sequenza:
 
 Avremo la seguente relazione:
 
-![FFT-Real-3](http://latex.codecogs.com/gif.latex?Y%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20&plus;%20Z%5E*%28N-k%29%7D%7B2%7D)
+![FFT-Real-3](http://latex.codecogs.com/gif.latex?X%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20&plus;%20Z%5E*%28N-k%29%7D%7B2%7D)
 
 ![FFT-Real-4](http://latex.codecogs.com/gif.latex?Y%28k%29%20%3D%20%5Cfrac%7BZ%28k%29%20-Z%5E*%28N-k%29%7D%7B2%5Ciota%7D)
 
