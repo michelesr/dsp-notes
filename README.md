@@ -14,10 +14,13 @@ Spesso ci capita di avere dei dubbi particolari, che segnalamo nelle issue come 
 
 ## Index
 
+Segnali
 - [Teoremi](theorems.md)
 - [Convoluzione e deconvoluzione](conv_deconv.md)
 - [Analisi spettrale](spectral_analysis.md)
 - [Fase](phase.md)
-- [Immagini](images.md)
-- [Funzioni di trasferimento](transfer_functions.md) (esercizi)
 - [Fast Fourier Transform](fft.md)
+- [Funzioni di trasferimento](transfer_functions.md) (esercizi)
+
+Immagini
+- [Immagini](images.md)
