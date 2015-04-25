@@ -95,6 +95,7 @@ Per la nostra sequenza vale la seguente relazione:
 ### Con due sequenze reali
 
 Combiniamo le due sequenze reali `x(n)` e `y(n)` nella sequenza:
+
     z(n) = x(n) + iy(n)
 
 Avremo la seguente relazione:
