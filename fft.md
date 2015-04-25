@@ -39,7 +39,7 @@ La `DFT` `X(k)` è la somma di `2` `DTF` di lunghezza `N/2`:
 
 ![FFT2(k)](http://latex.codecogs.com/gif.latex?X%28k&plus;%20%5Cfrac%7BN%7D%7B2%7D%29%20%3D%20X_1%28k%29%20-%20W_N%5E%7Bk%7DX_2%28k%29)
 
-con `k` nell'intervallo `[0, N/2 - 1]`
+con `k` nell'intervallo `[0, N/2 - 1]`.
 
 ![Time-decimation](http://cnx.org/resources/657717c02db3efbef5dd37729d676ba1/image4.png)
 
@@ -81,7 +81,7 @@ Abbiamo infine le seguenti relazioni:
 
 ![2](http://latex.codecogs.com/gif.latex?X_2%28n%29%20%3D%20f%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
 
-con `k` nell'intervallo `[0, N/2 - 1]`
+con `n` nell'intervallo `[0, N/2 - 1]`.
 
 ![Frequency-Decimation](http://www.transtutors.com/Uploadfile/CMS_Images/21120_Twiddle%20factor.JPG)
 
