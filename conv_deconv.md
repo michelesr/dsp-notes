@@ -161,9 +161,7 @@ precedente.
 
 ### Considerazioni sulla FFT e IFFT
 
-Utilizzare una FFT a decimazione nella frequenza e una IFFT a decimazione nel
+Utilizzare una `fft` a decimazione nella frequenza e una `ifft` a decimazione nel
 tempo permetterà di ottenere una sequenza di output ordinata correttamente.
 
-Se si opera con sequenze reali conviene utilizzare una sola FFT per calcolare 2
-sezioni, costruendo la sequenza `Xm(n) + iXm+1(n)` che avrà come output della
-elaborazione la sequenza `Ym(n) + iYm+1(n)`.
+Se si opera con sequenze reali conviene utilizzare una sola `fft` come possiamo vedere [qui](fft.md#fft-di-sequenze-reali)
