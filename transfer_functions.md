@@ -2,12 +2,12 @@
 
 Questa e' la parte piu' pratica relativa agli esercizi.
 
-## Zeri e poli
-
-In breve:
+## Legenda
 
 - zeri (o radici):  valori per cui si annulla il numeratore
 - poli:  valori per cui si annulla il denominatore
+- coefficienti di riflessione:  coefficienti calcolati
+- residui:  i coefficienti al numeratore ottenuti in fase di scomposizione in fratte parziali (avendo tutti gradi 1 al denominatore)
 
 ## Metodi di risoluzione
 
@@ -15,8 +15,9 @@ In breve:
 - scomposizione in fratte parziali (vedi sotto)
 - long division:  divisione tra 2 polinomi con metodo in colonna, affinche' l'esponente del numeratore sia inferiore a quello del denominatore
 - calcolo tra coefficienti della scomposizione (da vedere)
-- residui:  TODO
-- stabilita' BIBO:  verificare che tutti i resiqui (o zeri?) abbiano modulo `< 1` (nota: `<`, non `<=`)
+- stabilita' BIBO:  verificare che tutti i poli (o i coefficienti di riflessione) abbiano modulo `< 1` (nota: `<`, non `<=`)
+
+Nota: un filtro FIR (solo numeratore) e' sempre stabile per definizione
 
 Consigli:
 
@@ -85,7 +86,7 @@ L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la 
 
 ### Traliccio
 
-Questa realizzazione prevede il calcolo dei *residui*.
+Questa realizzazione prevede il calcolo dei *coefficienti di riflessione*.
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-4%7D)
 
