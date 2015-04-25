@@ -30,6 +30,10 @@ Per sistemi a tempo discreto, la fase lineare perfetta si ottiene tramite
 l'utilizzo di filtri a risposta impulsiva finita (`FIR`) che hanno una risposta
 impulsiva simmetrica.
 
+#### Considerazioni
+
+Nel caso in cui la fase sia `lineare`, il `ritardo di gruppo` e il `ritardo di fase` assumono lo stesso valore costante che definisce il ritardo complessivo del sistema.
+
 ### Fase minima
 
 Un sistema lineare e tempo invariante (`LTI`) viene detto a `fase minima` se il
