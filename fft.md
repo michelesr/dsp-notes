@@ -68,9 +68,25 @@ Questa volta spezziamo la sequenza `x(n)` in due sequenze `adiacenti`:
     x2(n) = x(n + N/2)  for n in [0, N/2-1]
 
 La `FFT` di `x1(n)` ci da i termini pari mentre quella di `x2(n)` ci da i
-termini dispari.
 
-**STUB**
+Costriuamo poi le sequenze `f(n)` e `g(n)` definite come:
+
+![F(n)](http://latex.codecogs.com/gif.latex?f%28n%29%20%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
+
+![G(n)](http://latex.codecogs.com/gif.latex?g%28n%29%20%3D%20%28x_1%28n%29%20-%20x_2%28n%29%29%20W_N%5En)
+
+Abbiamo infine le seguenti relazioni:
+
+![1](http://latex.codecogs.com/gif.latex?x_1%28n%29%20%3D%20g%28n%29%3D%20%28x_1%28n%29%20-%20x_2%28n%29%29%20W_N%5E%7Bn%7D)
+![2](http://latex.codecogs.com/gif.latex?x_2%28n%29%20%3D%20g%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
+
+![Frequency-Decimation](http://www.transtutors.com/Uploadfile/CMS_Images/21120_Twiddle%20factor.JPG)
+
+Come potete vedere nel disegno, le moltiplicazioni con le `W` vengono fatte dopole somme (o differenze quando abbiamo `-1`). 
+
+Inoltre possiamo notare che mentre nella decimazione nel tempo partivamo con
+indici permutati, qui partiamo con indici ordinati e finiamo con indici
+permutati sempre con la stessa regola del `bit-reversal`.
 
 ## FFT di sequenze reali
 
