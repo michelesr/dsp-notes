@@ -81,6 +81,8 @@ Abbiamo infine le seguenti relazioni:
 
 ![2](http://latex.codecogs.com/gif.latex?X_2%28n%29%20%3D%20f%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
 
+con `k` nell'intervallo `[0, N/2 - 1]`
+
 ![Frequency-Decimation](http://www.transtutors.com/Uploadfile/CMS_Images/21120_Twiddle%20factor.JPG)
 
 Come potete vedere nel disegno, le moltiplicazioni con le `W` vengono fatte dopo le somme (o differenze quando abbiamo `-1`). 
