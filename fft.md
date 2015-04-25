@@ -78,6 +78,7 @@ Costriuamo poi le sequenze `f(n)` e `g(n)` definite come:
 Abbiamo infine le seguenti relazioni:
 
 ![1](http://latex.codecogs.com/gif.latex?x_1%28n%29%20%3D%20g%28n%29%3D%20%28x_1%28n%29%20-%20x_2%28n%29%29%20W_N%5E%7Bn%7D)
+
 ![2](http://latex.codecogs.com/gif.latex?x_2%28n%29%20%3D%20g%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
 
 ![Frequency-Decimation](http://www.transtutors.com/Uploadfile/CMS_Images/21120_Twiddle%20factor.JPG)
