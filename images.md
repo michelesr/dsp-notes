@@ -63,7 +63,7 @@ Il modello [RGB](https://it.wikipedia.org/wiki/RGB) viene utilizzato per le luci
 
 Due colori sono [complementari](https://it.wikipedia.org/wiki/Colori_complementari) quando sommati danno come risultato una luce acromatica (senza colore).  Visivamente, sono i colori in posizioni diametralmente opposte:
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/HSL_color_solid_dblcone_chroma_gray.png/197px-HSL_color_solid_dblcone_chroma_gray.png)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Colorwheel.svg/220px-Colorwheel.svg.png)
 
 ### CMYK
 
