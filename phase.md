@@ -34,7 +34,7 @@ Nel caso in cui la risposta di fase del sistema sia `lineare`, il `ritardo di gr
 ### Fase minima
 
 Un sistema lineare e tempo invariante (`LTI`) viene detto a `fase minima` se il
-sistema e il suo inverso sono `casuali` e `stabili`.
+sistema e il suo inverso sono `causali` e `stabili`.
 
 Per esempio, un sistema con funzione di trasferimento `H(z)` soddisfa causalità
 e stabilità sse tutti i `poli` stanno all'interno del circolo di raggio
