@@ -35,9 +35,9 @@ Separiamo `x(n)` in due sequenze `x(2n)` e `x(2n+1)`, ovvero la prima ha gli ele
 
 La `DFT` `X(k)` è la somma di `2` `DTF` di lunghezza `N/2`:
 
-![FFT(k)](http://latex.codecogs.com/gif.latex?X%28k%29%20%3D%20X_1%28k%29%20&plus;%20W_N%5E%7Bk%7DX_2%28k%29)
+![FFT(k)](http://latex.codecogs.com/gif.latex?x%28k%29%20%3D%20X_1%28k%29%20&plus;%20W_N%5E%7Bk%7DX_2%28k%29)
 
-![FFT2(k)](http://latex.codecogs.com/gif.latex?X%28k&plus;%20%5Cfrac%7BN%7D%7B2%7D%29%20%3D%20X_1%28k%29%20-%20W_N%5E%7Bk%7DX_2%28k%29)
+![FFT2(k)](http://latex.codecogs.com/gif.latex?x%28k&plus;%20%5Cfrac%7BN%7D%7B2%7D%29%20%3D%20X_1%28k%29%20-%20W_N%5E%7Bk%7DX_2%28k%29)
 
 con `k` nell'intervallo `[0, N/2 - 1]`.
 
