@@ -43,6 +43,8 @@ con `k` nell'intervallo `[0, N/2 - 1]`
 
 ![Time-decimation](http://cnx.org/resources/657717c02db3efbef5dd37729d676ba1/image4.png)
 
+Per qualche strano motivo nel disegno appare `W0` e `W2` al posto di `W0` e `W1` al centro.
+
 Com'è possibile notare dal disegno, la sequenza originale ha gli indici
 permutati, dunque come troviamo l'indice corrispondente nella trasformazione? Basta invertire i bit del
 nostro indice!
@@ -79,11 +81,13 @@ Abbiamo infine le seguenti relazioni:
 
 ![1](http://latex.codecogs.com/gif.latex?x_1%28n%29%20%3D%20g%28n%29%3D%20%28x_1%28n%29%20-%20x_2%28n%29%29%20W_N%5E%7Bn%7D)
 
-![2](http://latex.codecogs.com/gif.latex?x_2%28n%29%20%3D%20g%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
+![2](http://latex.codecogs.com/gif.latex?x_2%28n%29%20%3D%20f%28n%29%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
 
 ![Frequency-Decimation](http://www.transtutors.com/Uploadfile/CMS_Images/21120_Twiddle%20factor.JPG)
 
-Come potete vedere nel disegno, le moltiplicazioni con le `W` vengono fatte dopole somme (o differenze quando abbiamo `-1`). 
+Come potete vedere nel disegno, le moltiplicazioni con le `W` vengono fatte dopo le somme (o differenze quando abbiamo `-1`). 
+
+Anche qua, per qualche strano motivo in mezzo abbiamo `W0` e `W2` invece che `W0` e `W1`, che erano presenti invece nel disegno sugli appunti del prof.
 
 Inoltre possiamo notare che mentre nella decimazione nel tempo partivamo con
 indici permutati, qui partiamo con indici ordinati e finiamo con indici
