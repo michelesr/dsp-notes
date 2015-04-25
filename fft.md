@@ -27,6 +27,8 @@ Ci son due metodi applicabili:
 - [decimazione nel tempo](fft.md#decimazione-nel-tempo)
 - [decimazione nella frequenza](fft.md#decimazione-nella-frequenza)
 
+Vedremo che nella decimazione nel tempo le sequenze vengono separate in sequenze a indici pari e dispari `2n` e `2n+1` nel dominio del tempo, e saranno sequente adiacenti nel dominio della frequenza `n` e `n+1`, mentre nella decimazione nella frequenza avremo il contrario.
+
 In entrambi i casi la complessità computazionale è `O(N logN)`.
 
 ## Decimazione nel tempo
@@ -42,8 +44,6 @@ La `DFT` `X(k)` è la somma di `2` `DTF` di lunghezza `N/2`:
 con `k` nell'intervallo `[0, N/2 - 1]`.
 
 ![Time-decimation](http://cnx.org/resources/657717c02db3efbef5dd37729d676ba1/image4.png)
-
-Per qualche strano motivo nel disegno appare `W0` e `W2` al posto di `W0` e `W1` al centro.
 
 Com'è possibile notare dal disegno, la sequenza originale ha gli indici
 permutati, dunque come troviamo l'indice corrispondente nella trasformazione? Basta invertire i bit del
@@ -68,8 +68,14 @@ Questa volta spezziamo la sequenza `x(n)` in due sequenze `adiacenti`:
 
     x1(n) = x(n)        for n in [0, N/2-1]
     x2(n) = x(n + N/2)  for n in [0, N/2-1]
+    
+Per queste sequenze valgono le sequenti relazioni:
 
-Costriuamo poi le sequenze `f(n)` e `g(n)` definite come:
+![X(2k)](http://latex.codecogs.com/gif.latex?X%282k%29%20%3D%20%5Csum_%7Bn%3D0%7D%5E%7B%5Cfrac%7BN%7D%7B2%7D-1%7D%5BX_1%28n%29&plus;X_2%28n%29%5DW_%7BN/2%7D%5E%7Bkn%7D)
+
+![X(2k+1)](http://latex.codecogs.com/gif.latex?X%282k&plus;1%29%20%3D%20%5Csum_%7Bn%3D0%7D%5E%7B%5Cfrac%7BN%7D%7B2%7D-1%7D%5BX_1%28n%29-X_2%28n%29%5DW_N%5EnW_%7BN/2%7D%5E%7Bkn%7D)
+
+Le due espressioni sopra sono le `DTF` su `N/2` campioni delle sequenze `f(n)` e `g(n)` definite come:
 
 ![F(n)](http://latex.codecogs.com/gif.latex?f%28n%29%20%3D%20x_1%28n%29%20&plus;%20x_2%28n%29)
 
@@ -83,11 +89,11 @@ Abbiamo infine le seguenti relazioni:
 
 con `n` nell'intervallo `[0, N/2 - 1]`.
 
+Le trasformate `DFT` delle sequenze `f(n)` e `g(n)` ci danno dunque i termini pari e dispari, relativamente. Il procedimento viene iterato fino ad operare con sequenze di `2` campioni.
+
 ![Frequency-Decimation](http://www.transtutors.com/Uploadfile/CMS_Images/21120_Twiddle%20factor.JPG)
 
 Come potete vedere nel disegno, le moltiplicazioni con le `W` vengono fatte dopo le somme (o differenze quando abbiamo `-1`). 
-
-Anche qua, per qualche strano motivo in mezzo abbiamo `W0` e `W2` invece che `W0` e `W1`, che erano presenti invece nel disegno sugli appunti del prof.
 
 Inoltre possiamo notare che mentre nella decimazione nel tempo partivamo con
 indici permutati, qui partiamo con indici ordinati e finiamo con indici
