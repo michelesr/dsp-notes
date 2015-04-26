@@ -26,3 +26,4 @@ Immagini
 - [Filtri nel dominio spaziale](img_spatial_filter.md)
 - [Spettro e filtri nel dominio della frequenza](img_freq_filter.md)
 - [Modelli di colore](img_color_models.md)
+- [Compressione](img_compression.md)
