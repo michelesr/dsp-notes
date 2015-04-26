@@ -21,7 +21,13 @@ Alcuni tipi di `trasformazioni` più usate solo:
 ### Matrice di trasformazione
 
 L'operazione di trasformazione affine consiste nel [moltiplicare riga per colonna](http://www.youmath.it/lezioni/algebra-lineare/matrici-e-vettori/1567-prodotto-riga-per-colonna.html)
-la matrice di trasferimento e il vettore `(x,y,z)` (disposto in una colonna).
+il `vettore delle coordinate` con la `matrice di trasformazione`.
+
+Ad esempio per `ridimensionare` l'immagine:
+
+![Scale-Matrix](http://latex.codecogs.com/gif.latex?%5Bx%2Cy%2C1%5D%20%5Cbegin%7Bbmatrix%7D%20c_x%20%26%200%20%26%200%20%5C%5C%200%20%26%20c_y%20%26%200%20%5C%5C%200%20%26%200%20%26%201%20%5Cend%7Bbmatrix%7D%20%3D%20%5BC_x%20x%2C%20C_yy%2C%201%5D)
+
+Questa immagine da una panoramica di alcune possibili `trasformazioni`:
 
 ![Affine-Matrix](https://upload.wikimedia.org/wikipedia/commons/2/2c/2D_affine_transformation_matrix.svg)
 
