@@ -11,6 +11,8 @@ Il fitraggio spaziale di un immagine `MxN` con un filtro `mxn` è dato da:
 
 ![Spatial-Filter](http://latex.codecogs.com/gif.latex?g%28x%2Cy%29%20%3D%20%5Csum_%7Bs%20%3D-a%7D%5E%7Ba%7D%5Csum_%7Bt%3D-b%7D%5E%7Bb%7Dw%28s%2Ct%29f%28x&plus;s%2Cy&plus;t%29)
 
+    m = 2a+1, n = 2b+1
+
 Come è possibile intuire dalla formula, non si tratta di
 [convoluzione](conv_deconv.md) ma di [correlazione](https://en.wikipedia.org/wiki/Correlation).
 
