@@ -20,7 +20,7 @@ Alcuni tipi di `trasformazioni` più usate solo:
 
 ### Matrice di trasformazione
 
-L'operazione di trasformazione affine consiste nel moltiplicare riga per colonna
+L'operazione di trasformazione affine consiste nel [moltiplicare riga per colonna](http://www.youmath.it/lezioni/algebra-lineare/matrici-e-vettori/1567-prodotto-riga-per-colonna.html)
 la matrice di trasformazione con la funzione che definisce l'immagine:
 
 ![Affine-Matrix](https://upload.wikimedia.org/wikipedia/commons/2/2c/2D_affine_transformation_matrix.svg)
