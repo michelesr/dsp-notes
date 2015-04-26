@@ -1,6 +1,6 @@
 # Funzioni di trasferimento
 
-Questa e' la parte piu' pratica relativa agli esercizi.
+Questa e' la parte piu' pratica relativa agli esercizi riguardanti la realizzazione di filtri FIR e IIR tramite funzioni di trasferimento.
 
 ## Legenda
 
@@ -48,7 +48,7 @@ Si disegna direttamente, di seguito un filtro FIR.
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%201%20-%20%5Cfrac%7B13%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-4%7D)
 
-![](images/direct.png)
+![](diagrams/direct.png)
 
 ### Diretta II
 
@@ -56,7 +56,7 @@ E' sufficiente avere l'`1` come il coefficiente di `z^0` al denominatore.
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-3%7D%20&plus;%20z%5E%7B-4%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-3%7D%20&plus;%20%5Cfrac%7B1%7D%7B3%7Dz%5E%7B-4%7D%20%7D)
 
-![](images/direct2.png)
+![](diagrams/direct2.png)
 
 ### Diretta II trasposta
 
@@ -66,7 +66,7 @@ Come la diretta II, in cui bisogna:
 - sostituire `+` con `.` (e viceversa)
 - altro?
 
-![](images/direct2_transposed.png)
+![](diagrams/direct2_transposed.png)
 
 ### Cascata (in serie)
 
@@ -74,7 +74,7 @@ L'obiettivo e' ottenere il prodotto di piu' polinomi, principalmente attraverso 
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%20%5Ccdot%20%5Cfrac%7B%20%5Cfrac%7B4%7D%7B3%7D%20-%5Cfrac%7B7%7D%7B2%7Dz%5E%7B-1%7D%20-%5Cfrac%7B4%7D%7B3%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B2%7D%7B5%7Dz%5E%7B-1%7D%20-%5Cfrac%7B7%7D%7B9%7Dz%5E%7B-2%7D%20%7D)
 
-![](images/serial.png)
+![](diagrams/serial.png)
 
 ### Parallelo
 
@@ -82,7 +82,7 @@ L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la 
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%20&plus;%20%5Cfrac%7B%20%5Cfrac%7B4%7D%7B3%7D%20-%5Cfrac%7B7%7D%7B2%7Dz%5E%7B-1%7D%20-%5Cfrac%7B4%7D%7B3%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B2%7D%7B5%7Dz%5E%7B-1%7D%20-%5Cfrac%7B7%7D%7B9%7Dz%5E%7B-2%7D%20%7D)
 
-![](images/parallel.png)
+![](diagrams/parallel.png)
 
 ### Traliccio
 
@@ -112,6 +112,8 @@ Questa realizzazione prevede il calcolo dei *coefficienti di riflessione*.
 
 6. infine disegniamo il diagramma a traliccio
 
-    ![](images/lattice.png)
+    ![](diagrams/lattice.png)
 
-### Traliccio-scala
+### Traliccio scala
+
+Il traliccio scala e' simile alla realizzazione a traliccio ma aggiunge una parte.
