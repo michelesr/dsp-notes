@@ -104,6 +104,37 @@ Il processo di codifica consiste nella `decodifica` e `inverse mapping`, dato ch
 
 ### Codifica di Huffman
 
+La codifica di Huffman costruisce il codice con la minor lunghezza possibile.
+
+I passi per implementarlo sono:
+
+- si visitano tutti i pixel
+- si ordinano le intensità in base alla frequenza
+- si uniscono i due valori con le frequenze minori
+- si ripete il procedimento fino ad ottenere 2 simboli
+
+Per un insieme di 6 valori avremo una situazione del tipo:
+
+    1 è un simbolo, 0 è un insieme di simboli
+    00 è un simbolo, 01 è un insieme di simboli
+    011 è un simbolo, 010 un insieme di simboli
+    0100 è un simbolo, 0101 un insieme di simboli
+    01011 è un simbolo, 01010 è l'ultimo simbolo
+
+Quindi avremo due serie di simboli:
+
+    # simboli della codifica ordinati per frequenza
+    [1, 00, 011, 0100, 01011, 01010]
+
+    # simboli non usati nella codifica
+    [0, 01, 010, 0101]
+
+Notare come i `prefissi` son tutti diversi, in questo modo si determina in
+maniera immediata la fine della parola e l'inizio della successiva.
+
+Questo tipo di codifica si usa anche nei formati
+`jpeg`,`mpeg`,`mp3`,`zip`,`rar`.
+
 ### Codifica RLE (Run-Lenght)
 
 In questa codifica si definiscono coppie di valore e lunghezza, ovvero si codifica il valore del primo pixel e il numero di volte che questo valore si ripete consecutivamente.
@@ -143,5 +174,4 @@ valori:
   `byte` successivi troviamo l'indice del colore dei pixel.
 
 ### Codifica per piani di bit
-
 ### Codifica a blocchi mediante trasformata
