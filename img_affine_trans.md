@@ -33,8 +33,8 @@ Questa immagine da una panoramica di alcune possibili `trasformazioni`:
 
 Esistono due approcci per l'applicazione delle trasformate:
 
-- forward mapping
-- inverse mapping
+- [forward mapping](img_affine_trans.md#forward-mapping)
+- [inverse mapping](img_affine_trans.md#inverse-mapping)
 
 ### Forward mapping
 
