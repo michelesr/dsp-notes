@@ -1,4 +1,58 @@
-# Immagini
+# Immagini nel dominio della frequenza
+
+## Spettro delle Immagini
+
+### CTFT
+
+Sia `(f(x,y))` una funzione continua di variabili continue, la sua `trasformata
+a tempo continua di Fourier` si definisce come:
+
+![CTFT-2d](http://latex.codecogs.com/gif.latex?F%28%5Cmu%2C%5Cnu%29%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7D%5Cint_%7B-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7Df%28x%2Cy%29%20e%5E%7B-%5Ciota%202%5Cpi%28%5Cmu%20x%20&plus;%20%5Cnu%20y%29%7Ddxdy)
+
+Mentre la trasformata inversa invece è data da:
+
+![ICTFT-2d](http://latex.codecogs.com/gif.latex?f%28x%2Cy%29%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7D%5Cint_%7B-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7DF%28%5Cmu%2C%5Cnu%29%20e%5E%7B%5Ciota%202%5Cpi%28%5Cmu%20x%20&plus;%20%5Cnu%20y%29%7Dd%5Cmu%20d%5Cnu)
+
+Il dominio trasformato viene definito `dominio della frequenza`, e le variabili
+indipendenti, nel caso delle immagini, hanno l'unità di misura definita in
+`cicli/m`.
+
+Come abbiamo visto per lo spettro dei segnali, anche quà il lobo principale
+tende a contrarsi all'aumentare delle dimensioni dell'immagine originale.
+
+### DFT
+
+Per un immagine `MxN` viene così definita:
+
+![DFT-2d](http://latex.codecogs.com/gif.latex?F%28%5Cmu%2C%20%5Cnu%29%20%3D%20%5Csum_%7B%5Cmu%20%3D%200%7D%5E%7BM-1%7D%5Csum_%7B%5Cnu%20%3D%200%7D%5E%7BN-1%7Df%28x%2Cy%29e%5E%7B-%5Ciota%202%5Cpi%28%5Cfrac%7B%5Cmu%20x%7D%7BM%7D%20&plus;%20%5Cfrac%7B%5Cmu%20y%7D%7BN%7D%29%7D)
+
+L'inversa è:
+
+![IDFT-2d](http://latex.codecogs.com/gif.latex?f%28x%2Cy%29%20%3D%20%5Cfrac%7B1%7D%7BMN%7D%5Csum_%7B%5Cmu%20%3D%200%7D%5E%7BM-1%7D%5Csum_%7B%5Cnu%20%3D%200%7D%5E%7BN-1%7DF%28%5Cmu%2C%5Cnu%29e%5E%7B%5Ciota%202%5Cpi%28%5Cfrac%7B%5Cmu%20x%7D%7BM%7D%20&plus;%20%5Cfrac%7B%5Cmu%20y%7D%7BN%7D%29%7D)
+
+Lo spettro è periodico sulle dimensioni `MxN`, quindi al di fuori di quella
+sezione i valori si ripetono.
+
+Per funzioni reali, lo spettro è a `simmetria coniugata`, per le immaginarie
+(quelle con `Re(f(x,y))=0`) è ad `antisimmetria coniugata`.
+
+### Interpetazione dello spettro delle immagini (facoltativo)
+
+A differenza del caso dei segnali, lo spettro delle immagini risulta meno
+leggibile e interpretabile. In parole povere, non ci si può aspettare di
+interpretare l'informazione a partire dallo spettro facilmente.
+
+Allo stesso modo, non è consigliabile il design di filtri nel dominio della
+frequenza. Infatti, la caratteristica principale delle immagini sono i bordi,
+che son composti da un range vasto di frequenze. Di solito è meglio lavorare nel
+`dominio spaziale` e ragionare in termini di `smoothing` e `sharpening`
+piuttosto che di filtraggi `high-pass` e `low-pass`.
+
+Modificare un immagine nel dominio della frequenza in generale non è produttivo,
+ma d'altro canto, il dominio trasformato ha delle particolari proprietà, tra cui
+il fatto che la `convoluzione` nel dominio spaziale è un `prodotto` nel dominio della frequenza (per il [teorema di convoluzione]()), che introduce quindi una semplificazione delle operazioni.
+
+Fonte: http://www.dspguide.com/ch24/5.htm
 
 ## Filtraggio immagini nel dominio della frequenza
 
