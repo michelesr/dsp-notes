@@ -50,7 +50,7 @@ piuttosto che di filtraggi `high-pass` e `low-pass`.
 
 Modificare un immagine nel dominio della frequenza in generale non è produttivo,
 ma d'altro canto, il dominio trasformato ha delle particolari proprietà, tra cui
-il fatto che la `convoluzione` nel dominio spaziale è un `prodotto` nel dominio della frequenza (per il [teorema di convoluzione]()), che introduce quindi una semplificazione delle operazioni.
+il fatto che la `convoluzione` nel dominio spaziale è un `prodotto` nel dominio della frequenza (per il [teorema di convoluzione](https://en.wikipedia.org/wiki/Convolution_theorem)), che introduce quindi una semplificazione delle operazioni.
 
 Fonte: http://www.dspguide.com/ch24/5.htm
 
