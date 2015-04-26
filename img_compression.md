@@ -30,14 +30,6 @@ Un bel trucco per ridurre la `lunghezza del codice` consiste nel definire un `co
 
 Dato che spesso molti `pixel` hanno valori `correlati` tra di loro, abbiamo un inutile `replicazione` del valore e quindi una `ridondanza` di valori tra i pixel correlati `spazialmente`.
 
-### Codifica RLE (Run-Lenght)
-
-In questa codifica si definiscono coppie di valore e lunghezza, ovvero si codifica il valore del primo pixel e il numero di volte che questo valore si ripete consecutivamente.
-
-Questo tipo di codifica è molto efficace quando abbiamo ad esempio zone di intensità costante (come ad esempio il cielo in un punto dove non ci sono variazioni di intensità, o l'erba del prato, ecc...). 
-
-Si parla di processo `reversibile` quando è possibile risalire all'informazione originale (compressione `lossless`), mentre si parla di processo `irreversibile` quando la codifica introduce una perdita di informazione (compressione `lossy`).
-
 ## Informazione irrilevante
 
 La maggior parte delle `matrici di intensità 2D` contengono `informazioni` ignorate dal `sistema visivo umano` (oppure addirittura `estranee` all'utilizzo dell'immagine). L'`informazione` risulta non necessaria in quanto non `fruibile`.
@@ -104,7 +96,52 @@ Viene ridotta l'accuratezza della rappresentazione secondo criteri di fedeltà p
 
 Viene infine scelto un `codice`, spesso a [lunghezza variabile](https://en.wikipedia.org/wiki/Variable-length_code) per rappresentare i valori.
 
-## Processo di decodifica
+### Decodifica
 
 Il processo di codifica consiste nella `decodifica` e `inverse mapping`, dato che il processo di quantizzazione è `irreversibile`.
 
+## Algoritmi di compressione
+
+### Codifica di Huffman
+
+### Codifica RLE (Run-Lenght)
+
+In questa codifica si definiscono coppie di valore e lunghezza, ovvero si codifica il valore del primo pixel e il numero di volte che questo valore si ripete consecutivamente.
+
+Questo tipo di codifica è molto efficace quando abbiamo ad esempio zone di intensità costante (come ad esempio il cielo in un punto dove non ci sono variazioni di intensità, o l'erba del prato, ecc...). 
+
+La codifica `RLE` viene utilizzata anche nei formati `JPEG` e `BMP`
+
+#### RLE nel formato BMP
+
+Nel formato `BMP` i dati possono essere rappresentati in due modi diversi:
+
+- codificati
+- assoluti
+
+Entrambe le modalità possono essere presenti nella stessa immmagine.
+
+#### BMP a dati codificati
+
+Viene utilizzata una rappresentazione `RLE` a 2 `byte`. Il primo `byte`
+individua il numero di pixel consecutivi che hanno lo stesso valore, che è
+descritto nel secondo `byte`.
+
+Quindi con il secondo byte è possibile descrivere fino a 256 valori (che di
+solito rappresentano l'intensità o i colori).
+
+#### BMP a dati assoluti
+
+Il primo byte vale sempre `0`, mentre il secondo `byte` può assumere i seguenti
+valori:
+
+- `0`, `fine della linea`
+- `1`, `EOF`
+- `2`, i `byte` successivi contengono gli `indirizzi relativi` (orrizzontali e
+  verticali), a una nuova posizione spaziale dell'immagine
+- `3-255`, determina il numero di pixel successivi non compressi con RLE, e nei
+  `byte` successivi troviamo l'indice del colore dei pixel.
+
+### Codifica per piani di bit
+
+### Codifica a blocchi mediante trasformata
