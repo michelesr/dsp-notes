@@ -23,7 +23,7 @@ Alcuni tipi di trasformazioni più usate solo:
 L'operazione di trasformazione affine consiste nel moltiplicare riga per colonna
 la matrice di trasformazione con la funzione che definisce l'immagine:
 
-![Affine-Matrix](https://en.wikipedia.org/wiki/File:2D_affine_transformation_matrix.svg)
+![Affine-Matrix](https://upload.wikimedia.org/wikipedia/commons/2/2c/2D_affine_transformation_matrix.svg)
 
 Esistono due approcci per l'applicazione delle trasformate:
 
