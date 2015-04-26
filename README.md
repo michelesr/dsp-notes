@@ -23,5 +23,5 @@ Segnali
 - [Funzioni di trasferimento](transfer_functions.md) (esercizi)
 
 Immagini
-- [Immagini](images.md)
+- [Spettro e filtri nel dominio della frequenza](img_freq_filter.md)
 - [Modelli di colore](color_models.md)
