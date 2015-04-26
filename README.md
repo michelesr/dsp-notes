@@ -23,6 +23,8 @@ Segnali
 - [Funzioni di trasferimento](transfer_functions.md) (esercizi)
 
 Immagini
+- [Trasformazioni affini](img_affine_trans.md)
 - [Filtri nel dominio spaziale](img_spatial_filter.md)
 - [Spettro e filtri nel dominio della frequenza](img_freq_filter.md)
 - [Modelli di colore](img_color_models.md)
+- [Equalizzazione di istogrammi](img_histogram_equalization.md)
