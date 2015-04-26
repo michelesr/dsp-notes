@@ -52,10 +52,14 @@ Un altro filtro che si usa è il `max`, o il `min`.
 
 ## Smoothing
 
+![Smoothing](https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.planetsourcecode.com%2FUpload_PSC%2FScreenShots%2FPIC20101271922318024.jpg&f=1)
+
 Lo `smoothing` è ottenibile tramite filtri `lineari` come le `medie` o con
 filtri `non lineari` come i `mediani`.
 
 ## Sharpening
+
+![Sharpening](http://media-cache-ak0.pinimg.com/736x/7a/bb/24/7abb24b40effe4b85dfb75f7de73d8d6.jpg)
 
 --- *TODO* ---
 
