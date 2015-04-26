@@ -128,11 +128,9 @@ Il traliccio scala e' simile alla realizzazione a traliccio aggiungendone una pa
 
     ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7D%20%28%5Cfrac%7B1%7D%7B2%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D%29)
 
-3. ripetiamo fino ad ottenere i 3 coefficienti
+3. ripetiamo fino ad ottenere i 3 coefficienti, ma dobbiamo tenere in cache anche le varie fasi in cui si sviluppa il polinomio
 
     ![](http://latex.codecogs.com/gif.latex?k_3%20%3D%20%5Cfrac%7B1%7D%7B2%7D%2C%20k_2%20%3D%20-2%2C%20k_1%20%3D%20%5Cfrac%7B1%7D%7B2%7D)
-
-3b. ma dobbiamo tenere in cache anche le varie fasi in cui si sviluppa il polinomio
 
     ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D)
     ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D%20-%202z%5E%7B-2%7D)
