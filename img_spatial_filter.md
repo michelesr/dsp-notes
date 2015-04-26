@@ -48,4 +48,34 @@ Un esempio di filtro `non lineare` è il filtro `mediano` che sostituisce il pix
 
 Il `filtro mediano` è molto comodo per la `eliminazione dei rumori`.
 
-Un altro filtro che si usa è il `max`.
+Un altro filtro che si usa è il `max`, o il `min`.
+
+## Smoothing
+
+Lo `smoothing` è ottenibile tramite filtri `lineari` come le `medie` o con
+filtri `non lineari` come i `mediani`.
+
+## Sharpening
+
+--- *TODO* ---
+
+## Unsharp Masking
+
+Un tipico processo utilizzato dall'industria grafica e pubblicitaria per
+applicare lo `sharpening` è l'`unsharp masking`.
+
+Sfochiamo l'immagine originale (`smoothing`) e creiamo una `maschera` a partire dalla `differenza` tra l'immagine `originale` e la `sfocata`.
+
+A questo punto avremo una `maschera` del tipo:
+
+![m(x,y) = f(x,y) -
+fsm(x,y)](http://latex.codecogs.com/gif.latex?m%28x%2Cy%29%20%3D%20f%28x%2Cy%29%20-%20f_%7Bsm%7D%28x%2Cy%29)
+
+Il `filtro` si applica infine in questo modo:
+
+![g(x,y) = f(x,y) +
+km(x,y)](http://latex.codecogs.com/gif.latex?g%28x%2Cy%29%20%3D%20f%28x%2Cy%29%20&plus;%20k%20m%28x%2Cy%29)
+
+Per `k = 1` abbiamo un `unsharp masking` per `k > 1` abbiamo un effetto `high-boost`, ovvero un'amplificazione delle altre frequenze (e quindi delle alte differenze di intensità).
+
+Per `k < 1` il contributo di `sharpening` si riduce.
