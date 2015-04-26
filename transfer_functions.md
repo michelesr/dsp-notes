@@ -122,30 +122,30 @@ Il traliccio scala e' simile alla realizzazione a traliccio aggiungendone una pa
 
 1. si parte dal denominatore e si cercano i coefficienti di riflessione, quindi come prima cosa otteniamo l'`1` come primo coefficiente del denominatore
 
-![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B4%7D%20%28%204%20-%206z%5E%7B-1%7D%20-%209z%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20%29%20%3D%201%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D)
+    ![](http://latex.codecogs.com/gif.latex?%5Cfrac%7B1%7D%7B4%7D%20%28%204%20-%206z%5E%7B-1%7D%20-%209z%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20%29%20%3D%201%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D)
 
 2. quindi dato `k3 = 1/2`, sottraiamo a coefficienti invertiti come gia' visto per il traliccio
 
-![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7D%20%28%5Cfrac%7B1%7D%7B2%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D%29)
+    ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D%20-%20%5Cfrac%7B1%7D%7B2%7D%20%28%5Cfrac%7B1%7D%7B2%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D%29)
 
 3. ripetiamo fino ad ottenere i 3 coefficienti
 
-![](http://latex.codecogs.com/gif.latex?k_3%20%3D%20%5Cfrac%7B1%7D%7B2%7D%2C%20k_2%20%3D%20-2%2C%20k_1%20%3D%20%5Cfrac%7B1%7D%7B2%7D)
+    ![](http://latex.codecogs.com/gif.latex?k_3%20%3D%20%5Cfrac%7B1%7D%7B2%7D%2C%20k_2%20%3D%20-2%2C%20k_1%20%3D%20%5Cfrac%7B1%7D%7B2%7D)
 
 ma dobbiamo tenere in cache anche le varie fasi in cui si sviluppa il polinomio
 
-![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D)
-![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D%20-%202z%5E%7B-2%7D)
-![](http://latex.codecogs.com/gif.latex?1%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D)
+    ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D)
+    ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D%20-%202z%5E%7B-2%7D)
+    ![](http://latex.codecogs.com/gif.latex?1%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D)
 
 4. a questo punto ripartiamo dal numeratore e facciamo lo stesso lavoro, pero' andando a sottrarre i coefficienti presi dal denominatore (dato `j3 = 4`)
 
-![](http://latex.codecogs.com/gif.latex?26%20&plus;%203z%5E%7B-1%7D%20-%2014z%5E%7B-2%7D%20&plus;%204z%5E%7B-3%7D%20%7D%7B%204%20-%206z%5E%7B-1%7D%20-%209z%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%204%20%28%5Cfrac%7B1%7D%7B2%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D%29%20%3D%2024%20&plus;%2012z%5E%7B-1%7D%20-%208z%5E%7B-2%7D)
+    ![](http://latex.codecogs.com/gif.latex?26%20&plus;%203z%5E%7B-1%7D%20-%2014z%5E%7B-2%7D%20&plus;%204z%5E%7B-3%7D%20%7D%7B%204%20-%206z%5E%7B-1%7D%20-%209z%5E%7B-2%7D%20&plus;%202z%5E%7B-3%7D%20-%204%20%28%5Cfrac%7B1%7D%7B2%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-2%7D%20&plus;%20z%5E%7B-3%7D%29%20%3D%2024%20&plus;%2012z%5E%7B-1%7D%20-%208z%5E%7B-2%7D)
 
 5. calcoliamo cosi' 4 `j`
 
-![](http://latex.codecogs.com/gif.latex?j_3%20%3D%204%2C%20j_2%20%3D%20-8%2C%20j_1%20%3D%208%2C%20j_0%20%3D%204)
+    ![](http://latex.codecogs.com/gif.latex?j_3%20%3D%204%2C%20j_2%20%3D%20-8%2C%20j_1%20%3D%208%2C%20j_0%20%3D%204)
 
 6. e andiamo infine a disegnare
 
-![](diagrams/lattice_ladder.png)
+    ![](diagrams/lattice_ladder.png)
