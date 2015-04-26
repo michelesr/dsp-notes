@@ -135,7 +135,9 @@ Il traliccio scala e' simile alla realizzazione a traliccio aggiungendone una pa
 ma dobbiamo tenere in cache anche le varie fasi in cui si sviluppa il polinomio
 
     ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B3%7D%7B2%7Dz%5E%7B-1%7D%20-%20%5Cfrac%7B9%7D%7B4%7Dz%5E%7B-2%7D%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-3%7D)
+
     ![](http://latex.codecogs.com/gif.latex?1%20-%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D%20-%202z%5E%7B-2%7D)
+
     ![](http://latex.codecogs.com/gif.latex?1%20&plus;%20%5Cfrac%7B1%7D%7B2%7Dz%5E%7B-1%7D)
 
 4. a questo punto ripartiamo dal numeratore e facciamo lo stesso lavoro, pero' andando a sottrarre i coefficienti presi dal denominatore (dato `j3 = 4`)
