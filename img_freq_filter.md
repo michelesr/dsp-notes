@@ -5,7 +5,7 @@
 ### CTFT
 
 Sia `(f(x,y))` una funzione continua di variabili continue, la sua `trasformata
-a tempo continua di Fourier` si definisce come:
+a tempo continuo di Fourier` si definisce come:
 
 ![CTFT-2d](http://latex.codecogs.com/gif.latex?F%28%5Cmu%2C%5Cnu%29%20%3D%20%5Cint_%7B-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7D%5Cint_%7B-%5Cinfty%7D%5E%7B&plus;%5Cinfty%7Df%28x%2Cy%29%20e%5E%7B-%5Ciota%202%5Cpi%28%5Cmu%20x%20&plus;%20%5Cnu%20y%29%7Ddxdy)
 
@@ -40,7 +40,7 @@ Per funzioni reali, lo spettro è a `simmetria coniugata`, per le immaginarie
 
 A differenza del caso dei segnali, lo spettro delle immagini risulta meno
 leggibile e interpretabile. In parole povere, non ci si può aspettare di
-interpretare l'informazione a partire dallo spettro facilmente.
+interpretare facilmente l'informazione contenuta nello spettro.
 
 Allo stesso modo, non è consigliabile il design di filtri nel dominio della
 frequenza. Infatti, la caratteristica principale delle immagini sono i bordi,
@@ -50,7 +50,7 @@ piuttosto che di filtraggi `high-pass` e `low-pass`.
 
 Modificare un immagine nel dominio della frequenza in generale non è produttivo,
 ma d'altro canto, il dominio trasformato ha delle particolari proprietà, tra cui
-il fatto che la `convoluzione` nel dominio spaziale è un `prodotto` nel dominio della frequenza (per il [teorema di convoluzione](https://en.wikipedia.org/wiki/Convolution_theorem)), che introduce quindi una semplificazione delle operazioni.
+il fatto che la `convoluzione` nel dominio spaziale è un `prodotto` nel dominio della frequenza (per il [teorema di convoluzione](https://en.wikipedia.org/wiki/Convolution_theorem)). Questa proprietà introduce quindi una semplificazione delle operazioni.
 
 Fonte: http://www.dspguide.com/ch24/5.htm
 
