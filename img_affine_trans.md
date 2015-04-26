@@ -1,20 +1,20 @@
 # Trasformazioni affini
 
 Per `trasformazione affine` si intende una manipolazione dell'immagine che ha lo
-scopo di modificare la posizione dei pixel.
+scopo di modificare la `posizione` dei pixel.
 
 Consistono principalmente in due passi:
 
-- trasformazione spaziale delle coordinate
-- interpolazione delle intensità dei pixel
+- `trasformazione spaziale` delle `coordinate`
+- `interpolazione` delle `intensità` dei pixel
 
-Alcuni tipi di trasformazioni più usate solo:
+Alcuni tipi di `trasformazioni` più usate solo:
 
-- rotazione
-- traslazione
-- ingrandimento
-- scalatura
-- inclinazione
+- `rotazione`
+- `traslazione`
+- `ingrandimento`
+- `scalatura`
+- `inclinazione`
 
 ## Trasformazione spaziale
 
