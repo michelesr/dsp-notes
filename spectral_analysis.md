@@ -73,6 +73,11 @@ se si aumenta `L`.
 
 Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, che coincide con la DTFT campionata su `L` punti equidistanziati nell'intervallo `[0, 2π]`
 
+[rect_512.jpg](pictures/rect_512.jpg)
+[rect_4096.jpg](pictures/rect_4096.jpg)
+[hanning_256.jpg](pictures/hanning_256.jpg)
+[hanning_2048.jpg](pictures/hanning_2048.jpg)
+
 ### Periodicità e simmetria coniugata
 
 Ricordiamo che lo spettro della DTFT (e quindi anche della DFT) è periodico di periodo `2π` e che se la sequenza è reale allora il suo spettro è a simmetria coniugata (di conseguenza le frequenze nell'intervallo `[0,π]` hanno la stessa parte reale e lo stesso modulo di quelle nell'intervallo `[2π, π]`, ma hanno parte immaginaria con segno opposto e quindi fasi opposte).
