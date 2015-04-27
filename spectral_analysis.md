@@ -73,10 +73,10 @@ se si aumenta `L`.
 
 Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, che coincide con la DTFT campionata su `L` punti equidistanziati nell'intervallo `[0, 2π]`
 
-[rect_512.jpg](pictures/rect_512.jpg)
-[rect_4096.jpg](pictures/rect_4096.jpg)
-[hanning_256.jpg](pictures/hanning_256.jpg)
-[hanning_2048.jpg](pictures/hanning_2048.jpg)
+![rect_512.jpg](pictures/rect_512.jpg)
+![rect_4096.jpg](pictures/rect_4096.jpg)
+!hanning_256.jpg](pictures/hanning_256.jpg)
+![hanning_2048.jpg](pictures/hanning_2048.jpg)
 
 ### Periodicità e simmetria coniugata
 
