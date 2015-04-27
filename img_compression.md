@@ -174,4 +174,9 @@ valori:
   `byte` successivi troviamo l'indice del colore dei pixel.
 
 ### Codifica per piani di bit
+
+TODO
+
 ### Codifica a blocchi mediante trasformata
+
+TODO
