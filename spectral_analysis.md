@@ -75,7 +75,7 @@ Lo spettro di solito viene valutato tramite FFT su una sequenza di durata `L`, c
 
 ![rect_512.jpg](pictures/rect_512.jpg)
 ![rect_4096.jpg](pictures/rect_4096.jpg)
-!hanning_256.jpg](pictures/hanning_256.jpg)
+![hanning_256.jpg](pictures/hanning_256.jpg)
 ![hanning_2048.jpg](pictures/hanning_2048.jpg)
 
 ### Periodicità e simmetria coniugata
