@@ -61,7 +61,7 @@ filtri `non lineari` come i `mediani`.
 
 ![Sharpening](http://media-cache-ak0.pinimg.com/736x/7a/bb/24/7abb24b40effe4b85dfb75f7de73d8d6.jpg)
 
---- *TODO* ---
+Lo `sharpening` nel dominio spaziale avviene tramite metodi che utilizzano `derivate` del primo e secondo `ordine`, in modo da amplificare i punti dove si hanno le massime variazioni di intensità.
 
 ## Unsharp Masking
 
