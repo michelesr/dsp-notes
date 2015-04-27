@@ -179,4 +179,22 @@ TODO
 
 ### Codifica a blocchi mediante trasformata
 
-TODO
+Si tratta di una tecnica di compressione che divide l'immagine in piccoli
+blocchi non sovrapposti ed elabora i blocchi utilizzando una `fft` `2d`.
+
+Il decoder esegue quindi le seguenti operazioni:
+
+- costruzione delle sottoimmagini
+- trasformazione
+- quantizzazione
+- codifica
+
+Il decoder esegue dunque le operazioni inverse (tranne per la quantizzazione che
+non è `invertibile`).
+
+Tra le possibili trasformate possiamo scegliere:
+
+- `DFT`
+- `DCT` (`Discrete Cosine Transorm`)
+- `WFT` (`Walsh-Hadamard Fourier Transform`)
+
