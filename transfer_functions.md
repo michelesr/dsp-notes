@@ -5,7 +5,7 @@ Questa e' la parte piu' pratica relativa agli esercizi riguardanti la realizzazi
 ## Legenda
 
 - zeri (o radici):  valori per cui si annulla il numeratore
-- poli:  valori per cui si annulla il denominatore
+- poli:  valori per cui si annulla il denominatore (calcolare `z`, non `z^-1`)
 - coefficienti di riflessione:  coefficienti calcolati
 - residui:  i coefficienti al numeratore ottenuti in fase di scomposizione in fratte parziali (avendo tutti gradi 1 al denominatore)
 
@@ -78,7 +78,7 @@ L'obiettivo e' ottenere il prodotto di piu' polinomi, principalmente attraverso 
 
 ### Parallelo
 
-L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la *scomposizione in fratte parziali*.
+L'obiettivo e' ottenere la somma di piu' polinomi, principalmente attraverso la *scomposizione in fratte parziali*.  Prima di fare questo bisogna assicurarsi di avere il grado del numeratore minore di quello del denominatore.
 
 ![](http://latex.codecogs.com/gif.latex?H%28z%29%20%3D%20%5Cfrac%7B%20%5Cfrac%7B1%7D%7B3%7D%20-%5Cfrac%7B1%7D%7B8%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B7%7D%7B24%7Dz%5E%7B-1%7D%20-%5Cfrac%7B3%7D%7B4%7Dz%5E%7B-2%7D%20%7D%20&plus;%20%5Cfrac%7B%20%5Cfrac%7B4%7D%7B3%7D%20-%5Cfrac%7B7%7D%7B2%7Dz%5E%7B-1%7D%20-%5Cfrac%7B4%7D%7B3%7Dz%5E%7B-2%7D%20%7D%7B%201%20&plus;%20%5Cfrac%7B2%7D%7B5%7Dz%5E%7B-1%7D%20-%5Cfrac%7B7%7D%7B9%7Dz%5E%7B-2%7D%20%7D)
 
