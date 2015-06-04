@@ -88,11 +88,11 @@ Un esempio è la codifica *RLE*.
 
 ### Quantizzazione
 
-Viene ridotta l'accuratezza della rappresentazione secondo criteri di fedeltà prestabiliti con l'obiettivo di eliminare informazione irrilevante.
+Viene ridotta l'accuratezza della rappresentazione secondo criteri di fedeltà prestabiliti con l'obiettivo di eliminare informazione irrilevante. Questa operazione è *irreversibile*.
 
 ### Codifica dei simboli
 
-Viene infine scelto un *codice*, spesso a [lunghezza variabile](https://en.wikipedia.org/wiki/Variable-length_code) per rappresentare i valori.
+Viene infine scelto un *codice*, spesso a [lunghezza variabile](https://en.wikipedia.org/wiki/Variable-length_code) per rappresentare i valori. Questa operazione è *reversibile*.
 
 ### Decodifica
 
