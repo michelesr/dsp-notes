@@ -34,7 +34,7 @@ Il modello [CMYK](https://it.wikipedia.org/wiki/CMYK) viene utilizzando per i pi
 Il modello [HSI](https://it.wikipedia.org/wiki/Hue_Saturation_Brightness) (Hue, Saturation e Intensity) e' una scala alternativa che non prende i colori come base di riferimento.
 
 - la scala dei grigi ha saturazione (Saturation) nulla, mentre quando la saturazione e' massima abbiamo colori vivi
-- la tonalita' (Hue) nulla equivale al rosso per convenzione (Hue = 0 -> rosso, Hue = 1/3 -> verde, Hue = 2/3 -> blu)
+- la tonalita' (Hue) nulla equivale al rosso per convenzione (`Hue=0 -> red`, `Hue=1/3 -> green`, `Hue=2/3 -> blue`)
 - la luminosita' (Intensity) nulla equivale al nero, quella massima al bianco, mentre valori intermedi corrispondono a grigio 50%, e i colori che comunemente chiamano come rosso, arancione, giallo, etc
 - il fattore di conversione rispetto ai modelli RGB e CMYK e' un po' macchinoso:
   - la luminosita' e' datto dalla media di R, G e B
