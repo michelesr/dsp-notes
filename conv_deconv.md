@@ -17,7 +17,7 @@ Per il sistema `s` vale:
 Il processo di convoluzione viene utilizzato nel calcolo dell'uscita di un
 sistema di filtri digitali ([FIR](https://it.wikipedia.org/wiki/Finite_impulse_response), [IIR](https://it.wikipedia.org/wiki/Infinite_impulse_response)).
 
-Sia `X(n)` il segnale d'ingresso ed `H(n)` la risposta impulsiva del sistema, entrambe
+Sia `x(n)` il segnale d'ingresso ed `h(n)` la risposta impulsiva del sistema, entrambe
 nel dominio temporale, abbiamo che il segnale di uscita è dato dalla seguente
 relazione:
 
